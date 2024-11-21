@@ -180,8 +180,7 @@
                                                     </div><!--[--><!--]-->
                                                 </div>
                                             </div>
-                                        </div><!--]--><!--[--><a
-                                            ></a><!--]--><!--]-->
+                                        </div><!--]--><!--[--><!--]--><!--]-->
                                     </nav><!---->
                                     <div class="VPNavBarAppearance appearance" data-v-ea10065c="" data-v-c44248a2="">
                                         <button class="VPSwitch VPSwitchAppearance" type="button" role="switch"
@@ -776,120 +775,143 @@
                             <div data-v-f617e204="" class="content-container">
                                 <main data-v-f617e204="" class="main">
                                     <div data-v-f617e204=""
-                                      class="vp-doc _vuexy-vuejs-admin-template_documentation_guide_core_components_stepper"
-                                      style="position: relative;">
-                                      <div>
-                                        <h1 id="stepper" tabindex="-1">Stepper <a class="header-anchor"
-                                            href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#stepper"
-                                            aria-label="Permalink to &quot;Stepper&quot;">​</a></h1>
-                                        <blockquote>
-                                          <p>File: src/@core/components/AppStepper.vue</p>
-                                        </blockquote>
-                                        <hr>
-                                        <p>The Stepper component is a useful tool for simplifying complex processes into a series of
-                                          step-by-step instructions. There are two types of steppers available in this component:</p>
-                                        <ul>
-                                          <li>Default stepper (without icons)</li>
-                                          <li>Icon stepper - Automatically chosen when an <code>icon</code> is added to an item in the
-                                            stepper's step array.</li>
-                                        </ul>
-                                        <div class="warning custom-block">
-                                          <p class="custom-block-title">WARNING</p>
-                                          <p>Please note that although we have created a custom component for the stepper, it will be
-                                            replaced with Vuetify's stepper component in the future.</p>
+                                        class="vp-doc _vuexy-vuejs-admin-template_documentation_guide_core_components_stepper"
+                                        style="position: relative;">
+                                        <div>
+                                            <h1 id="stepper" tabindex="-1">Stepper <a class="header-anchor"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#stepper"
+                                                    aria-label="Permalink to &quot;Stepper&quot;">​</a></h1>
+                                            <blockquote>
+                                                <p>File: src/@core/components/AppStepper.vue</p>
+                                            </blockquote>
+                                            <hr>
+                                            <p>The Stepper component is a useful tool for simplifying complex processes
+                                                into a series of
+                                                step-by-step instructions. There are two types of steppers available in
+                                                this component:</p>
+                                            <ul>
+                                                <li>Default stepper (without icons)</li>
+                                                <li>Icon stepper - Automatically chosen when an <code>icon</code> is
+                                                    added to an item in the
+                                                    stepper's step array.</li>
+                                            </ul>
+                                            <div class="warning custom-block">
+                                                <p class="custom-block-title">WARNING</p>
+                                                <p>Please note that although we have created a custom component for the
+                                                    stepper, it will be
+                                                    replaced with Vuetify's stepper component in the future.</p>
+                                            </div>
+                                            <h2 id="props" tabindex="-1">Props <a class="header-anchor"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#props"
+                                                    aria-label="Permalink to &quot;Props&quot;">​</a></h2>
+                                            <p>The following are the props available for this component:</p>
+                                            <h3 id="items" tabindex="-1">items <a class="header-anchor"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#items"
+                                                    aria-label="Permalink to &quot;items&quot;">​</a></h3>
+                                            <table tabindex="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Required</th>
+                                                        <th>Type: Array</th>
+                                                        <th>Default : undefined</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <p>This is an array of objects representing the different steps of the
+                                                stepper. Each object should
+                                                have a <code>title</code> property and can optionally have
+                                                <code>icon</code>, <code>size</code>,
+                                                and <code>subtitle</code> properties.</p>
+                                            <h3 id="direction" tabindex="-1">direction <a class="header-anchor"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#direction"
+                                                    aria-label="Permalink to &quot;direction&quot;">​</a></h3>
+                                            <table tabindex="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Optional</th>
+                                                        <th>Type: String</th>
+                                                        <th>Default : horizontal</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <p>You can choose between displaying the stepper in two different
+                                                directions:
+                                                <code>vertical</code> or <code>horizontal</code>.
+                                            </p>
+                                            <h3 id="currentstep" tabindex="-1">currentStep <a class="header-anchor"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#currentstep"
+                                                    aria-label="Permalink to &quot;currentStep&quot;">​</a></h3>
+                                            <table tabindex="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Required</th>
+                                                        <th>Type: number</th>
+                                                        <th>Default : 0</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <p>This prop is mandatory and needs to be assigned with <code>v-model</code>
+                                                like this:
+                                                <code>v-mode:currentStep="your_current_step_variable"</code>. The
+                                                currentStep prop represents
+                                                the currently active step in the stepper.
+                                            </p>
+                                            <h3 id="iconsize" tabindex="-1">iconSize <a class="header-anchor"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#iconsize"
+                                                    aria-label="Permalink to &quot;iconSize&quot;">​</a></h3>
+                                            <table tabindex="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Optional</th>
+                                                        <th>Type: number</th>
+                                                        <th>Default : 52</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <p>This is an optional prop that allows you to set the <code>size</code> of
+                                                the
+                                                <strong>icons</strong> in the icon type stepper. If you're using the
+                                                default stepper, this prop
+                                                is not applicable.
+                                            </p>
+                                            <h3 id="isactivestepvalid" tabindex="-1">isActiveStepValid <a
+                                                    class="header-anchor"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#isactivestepvalid"
+                                                    aria-label="Permalink to &quot;isActiveStepValid&quot;">​</a></h3>
+                                            <table tabindex="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Optional</th>
+                                                        <th>Type: Boolean</th>
+                                                        <th>Default : undefined</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <p>This is another optional prop that you can use to <code>validate</code>
+                                                your step. If set to
+                                                <code>true</code>, the current step will be considered valid and the
+                                                user can move on to the
+                                                next step. If set to <code>false</code>, the user won't be able to
+                                                proceed to the
+                                                <code>next</code> step until the current step is valid. If this prop is
+                                                not provided, all steps
+                                                will be considered valid by default.
+                                            </p>
+                                            <h2 id="style" tabindex="-1">Style <a class="header-anchor"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#style"
+                                                    aria-label="Permalink to &quot;Style&quot;">​</a></h2>
+                                            <ul>
+                                                <li><strong>stepper-icon-step-bg</strong>: The class
+                                                    .stepper-icon-step-bg is designed
+                                                    specifically for creating steppers with colored backgrounds for each
+                                                    step, and is intended to
+                                                    be used exclusively with <strong>icon-based</strong> steppers.
+                                                    Please note that this class is
+                                                    not compatible with default steppers that display numbers.</li>
+                                            </ul>
                                         </div>
-                                        <h2 id="props" tabindex="-1">Props <a class="header-anchor"
-                                            href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#props"
-                                            aria-label="Permalink to &quot;Props&quot;">​</a></h2>
-                                        <p>The following are the props available for this component:</p>
-                                        <h3 id="items" tabindex="-1">items <a class="header-anchor"
-                                            href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#items"
-                                            aria-label="Permalink to &quot;items&quot;">​</a></h3>
-                                        <table tabindex="0">
-                                          <thead>
-                                            <tr>
-                                              <th>Required</th>
-                                              <th>Type: Array</th>
-                                              <th>Default : undefined</th>
-                                            </tr>
-                                          </thead>
-                                        </table>
-                                        <p>This is an array of objects representing the different steps of the stepper. Each object should
-                                          have a <code>title</code> property and can optionally have <code>icon</code>, <code>size</code>,
-                                          and <code>subtitle</code> properties.</p>
-                                        <h3 id="direction" tabindex="-1">direction <a class="header-anchor"
-                                            href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#direction"
-                                            aria-label="Permalink to &quot;direction&quot;">​</a></h3>
-                                        <table tabindex="0">
-                                          <thead>
-                                            <tr>
-                                              <th>Optional</th>
-                                              <th>Type: String</th>
-                                              <th>Default : horizontal</th>
-                                            </tr>
-                                          </thead>
-                                        </table>
-                                        <p>You can choose between displaying the stepper in two different directions:
-                                          <code>vertical</code> or <code>horizontal</code>.</p>
-                                        <h3 id="currentstep" tabindex="-1">currentStep <a class="header-anchor"
-                                            href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#currentstep"
-                                            aria-label="Permalink to &quot;currentStep&quot;">​</a></h3>
-                                        <table tabindex="0">
-                                          <thead>
-                                            <tr>
-                                              <th>Required</th>
-                                              <th>Type: number</th>
-                                              <th>Default : 0</th>
-                                            </tr>
-                                          </thead>
-                                        </table>
-                                        <p>This prop is mandatory and needs to be assigned with <code>v-model</code> like this:
-                                          <code>v-mode:currentStep="your_current_step_variable"</code>. The currentStep prop represents
-                                          the currently active step in the stepper.</p>
-                                        <h3 id="iconsize" tabindex="-1">iconSize <a class="header-anchor"
-                                            href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#iconsize"
-                                            aria-label="Permalink to &quot;iconSize&quot;">​</a></h3>
-                                        <table tabindex="0">
-                                          <thead>
-                                            <tr>
-                                              <th>Optional</th>
-                                              <th>Type: number</th>
-                                              <th>Default : 52</th>
-                                            </tr>
-                                          </thead>
-                                        </table>
-                                        <p>This is an optional prop that allows you to set the <code>size</code> of the
-                                          <strong>icons</strong> in the icon type stepper. If you're using the default stepper, this prop
-                                          is not applicable.</p>
-                                        <h3 id="isactivestepvalid" tabindex="-1">isActiveStepValid <a class="header-anchor"
-                                            href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#isactivestepvalid"
-                                            aria-label="Permalink to &quot;isActiveStepValid&quot;">​</a></h3>
-                                        <table tabindex="0">
-                                          <thead>
-                                            <tr>
-                                              <th>Optional</th>
-                                              <th>Type: Boolean</th>
-                                              <th>Default : undefined</th>
-                                            </tr>
-                                          </thead>
-                                        </table>
-                                        <p>This is another optional prop that you can use to <code>validate</code> your step. If set to
-                                          <code>true</code>, the current step will be considered valid and the user can move on to the
-                                          next step. If set to <code>false</code>, the user won't be able to proceed to the
-                                          <code>next</code> step until the current step is valid. If this prop is not provided, all steps
-                                          will be considered valid by default.</p>
-                                        <h2 id="style" tabindex="-1">Style <a class="header-anchor"
-                                            href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/core/components/tiptap-editor.html#style"
-                                            aria-label="Permalink to &quot;Style&quot;">​</a></h2>
-                                        <ul>
-                                          <li><strong>stepper-icon-step-bg</strong>: The class .stepper-icon-step-bg is designed
-                                            specifically for creating steppers with colored backgrounds for each step, and is intended to
-                                            be used exclusively with <strong>icon-based</strong> steppers. Please note that this class is
-                                            not compatible with default steppers that display numbers.</li>
-                                        </ul>
-                                      </div>
                                     </div>
-                                  </main>
+                                </main>
                                 <footer data-v-0e0099f1="" data-v-f617e204="" class="VPDocFooter"><!---->
                                     <nav data-v-0e0099f1="" class="prev-next" aria-labelledby="doc-footer-aria-label">
                                         <span data-v-0e0099f1="" class="visually-hidden"
