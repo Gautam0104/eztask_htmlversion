@@ -17,7 +17,7 @@
     <!-- End Google Tag Manager -->
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Splash Screen| Thunderbees</title>
+    <title>Splash Screen | Thunderbees</title>
     <meta name="description" content="Production Ready, Carefully Crafted, Extensive Vuetify Admin Template">
     <meta name="generator" content="VitePress v1.3.1">
     <link rel="preload stylesheet"
@@ -180,7 +180,11 @@
                                                     </div><!--[--><!--]-->
                                                 </div>
                                             </div>
-                                        </div><!--]--><!--[--><!--]--><!--]-->
+                                        </div><!--]--><!--[--><a
+                                            class="VPLink link vp-external-link-icon VPNavBarMenuLink" href=""
+                                            target="_blank" rel="noreferrer" tabindex="0" data-v-96c787e6=""
+                                            data-v-ae9b85a5=""><!--[--><span
+                                                data-v-ae9b85a5="">Purchase</span><!--]--></a><!--]--><!--]-->
                                     </nav><!---->
                                     <div class="VPNavBarAppearance appearance" data-v-ea10065c="" data-v-c44248a2="">
                                         <button class="VPSwitch VPSwitchAppearance" type="button" role="switch"
@@ -773,28 +777,29 @@
                         </div>
                         <div data-v-f617e204="" class="content">
                             <div data-v-f617e204="" class="content-container">
-                                <main class="main" data-v-f617e204="">
-                                    <div style="position:relative;"
+                                <main data-v-f617e204="" class="main">
+                                    <div data-v-f617e204=""
                                         class="vp-doc _vuexy-vuejs-admin-template_documentation_guide_splash-screen"
-                                        data-v-f617e204="">
+                                        style="position: relative;">
                                         <div>
                                             <h1 id="splash-screen" tabindex="-1">Splash screen <a class="header-anchor"
-                                                    href="#splash-screen"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/splash-screen.html#splash-screen"
                                                     aria-label="Permalink to &quot;Splash screen&quot;">​</a></h1>
                                             <p>We provide splash screen to show initial loader until Vue app is ready.
                                             </p>
-                                            <h2 id="loader" tabindex="-1">Loader <a class="header-anchor" href="#loader"
+                                            <h2 id="loader" tabindex="-1">Loader <a class="header-anchor"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/splash-screen.html#loader"
                                                     aria-label="Permalink to &quot;Loader&quot;">​</a></h2>
                                             <p>Loader is created using HTML &amp; CSS. There's no Vue code. You can find
                                                 loader markup in <code>index.html</code> file.</p>
                                             <h2 id="loader-color" tabindex="-1">Loader color <a class="header-anchor"
-                                                    href="#loader-color"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/splash-screen.html#loader-color"
                                                     aria-label="Permalink to &quot;Loader color&quot;">​</a></h2>
                                             <p>Loader styles are imported from <code>/public/loader.css</code> file.</p>
                                             <p>Loader color is automatically set as a primary color of template's theme.
                                             </p>
                                             <h2 id="loader-logo" tabindex="-1">Loader logo <a class="header-anchor"
-                                                    href="#loader-logo"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/splash-screen.html#loader-logo"
                                                     aria-label="Permalink to &quot;Loader logo&quot;">​</a></h2>
                                             <p>We are also displaying logo above the loader.We have used SVG code for
                                                 loader logo in <code>loading-logo</code> class of
@@ -803,7 +808,8 @@
                                             <p>To change the loader logo, you just need to replace your loader's SVG
                                                 code with ours. If you are using an image file,replace the image import
                                                 with SVG code.</p>
-                                            <h2 id="theme" tabindex="-1">Theme <a class="header-anchor" href="#theme"
+                                            <h2 id="theme" tabindex="-1">Theme <a class="header-anchor"
+                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/splash-screen.html#theme"
                                                     aria-label="Permalink to &quot;Theme&quot;">​</a></h2>
                                             <p>As splash screen is shown before vue is initialized we can't read the
                                                 theme. Hence, we store the current theme's background color in
@@ -820,7 +826,7 @@
                                                     class="copy"></button><span class="lang">ts</span>
                                                 <pre class="shiki shiki-themes dracula github-light has-diff vp-code"
                                                     tabindex="0"><code><span class="line diff remove"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> loaderColor</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> localStorage.</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">getItem</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">TemplateName-initial-loader-bg</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">) </span></span>
-<span class="line diff add"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> loaderColor</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> localStorage.</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">getItem</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">SalesMax-initial-loader-bg</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">) </span></span></code></pre>
+                                <span class="line diff add"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> loaderColor</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> localStorage.</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">getItem</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">SalesMax-initial-loader-bg</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">) </span></span></code></pre>
                                             </div>
                                         </div>
                                     </div>
