@@ -119,20 +119,21 @@
                                             tabindex="0" data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
                                                 data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
-                                            
+
                                             <div class="menu" data-v-77cf94f3="">
                                                 <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
                                                     <div class="items" data-v-0b06d54e=""><!--[--><!--[-->
                                                         <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880="">
                                                         </div><!--]--><!--[-->
-                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880=""></div>
+                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880="">
+                                                        </div>
                                                         <!--]--><!--]-->
                                                     </div><!--[--><!--]-->
                                                 </div>
                                             </div>
                                         </div><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
-                                            
+
                                             <div class="menu" data-v-77cf94f3="">
                                                 <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
                                                     <div class="items" data-v-0b06d54e=""><!--[--><!--[-->
@@ -752,18 +753,21 @@
                                         class="vp-doc _vuexy-vuejs-admin-template_documentation_guide_laravel-integration_laravel-deployment"
                                         data-v-f617e204="">
                                         <div>
-                                            <h1 id="laravel-deployment" tabindex="-1">Laravel Deployment <a class="header-anchor"
-                                                    href="#laravel-deployment" aria-label="Permalink to &quot;Laravel Deployment&quot;">​</a></h1>
+                                            <h1 id="laravel-deployment" tabindex="-1">Laravel Deployment <a
+                                                    class="header-anchor" href="#laravel-deployment"
+                                                    aria-label="Permalink to &quot;Laravel Deployment&quot;">​</a></h1>
                                             <ul>
-                                                <li>Please follow the Laravel official Deployment <a href="https://laravel.com/docs/10.x/deployment"
-                                                        target="_blank" rel="noreferrer">documentation</a></li>
+                                                <li>Please follow the Laravel official Deployment <a
+                                                        href="https://laravel.com/docs/10.x/deployment" target="_blank"
+                                                        rel="noreferrer">documentation</a></li>
                                             </ul>
                                             <p><strong>Let's create a production build:</strong></p>
                                             <ul>
-                                                <li>First, we have to change the base path of vue-router in below file.</li>
+                                                <li>First, we have to change the base path of vue-router in below file.
+                                                </li>
                                             </ul>
-                                            <div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">js</span>
+                                            <div class="language-js vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">js</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// full-version/src/router/index.{ts/js}</span></span>
                                     <span class="line"></span>
@@ -773,8 +777,8 @@
                                             <ul>
                                                 <li>Generate production build following below command:</li>
                                             </ul>
-                                            <div class="language-bash vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">bash</span>
+                                            <div class="language-bash vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">bash</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">npm</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> run</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> build</span></span></code></pre>
                                             </div>
@@ -784,17 +788,21 @@
                                             <p><strong>Let's understand by an example:</strong></p>
                                             <ul>
                                                 <li>
-                                                    <p>In this example, we are going to separate the Laravel and public folder for security reasons. Now
-                                                        We have to change the path of laravel resources in <code>public/index.php</code> file.</p>
+                                                    <p>In this example, we are going to separate the Laravel and public
+                                                        folder for security reasons. Now
+                                                        We have to change the path of laravel resources in
+                                                        <code>public/index.php</code> file.</p>
                                                 </li>
                                                 <li>
                                                     <p>It may differ from server to server.</p>
                                                 </li>
                                                 <li>
                                                     <p>We have two folder in our server.</p>
-                                                    <div class="language-txt vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
+                                                    <div class="language-txt vp-adaptive-theme"><button
+                                                            title="Copy Code" class="copy"></button><span
                                                             class="lang">txt</span>
-                                                        <pre class="shiki shiki-themes dracula github-light vp-code" tabindex="0"><code><span class="line"><span>├── public_html (folder for public accessible)</span></span>
+                                                        <pre class="shiki shiki-themes dracula github-light vp-code"
+                                                            tabindex="0"><code><span class="line"><span>├── public_html (folder for public accessible)</span></span>
                                     <span class="line"><span>│   ├── build</span></span>
                                     <span class="line"><span>│   │   ├── assets</span></span>
                                     <span class="line"><span>│   │   └── mix-manifest.json</span></span>
@@ -836,10 +844,14 @@
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <p>As an above structure, we have to changes some paths in the <code>index.php</code> file in the
-                                                        <code>public</code> or <code>public_html</code> file. Also, we have to bind the document root to
-                                                        he current file path, where <code>index.php</code> exists.</p>
-                                                    <div class="language-php vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
+                                                    <p>As an above structure, we have to changes some paths in the
+                                                        <code>index.php</code> file in the
+                                                        <code>public</code> or <code>public_html</code> file. Also, we
+                                                        have to bind the document root to
+                                                        he current file path, where <code>index.php</code> exists.
+                                                    </p>
+                                                    <div class="language-php vp-adaptive-theme"><button
+                                                            title="Copy Code" class="copy"></button><span
                                                             class="lang">php</span>
                                                         <pre class="shiki shiki-themes dracula github-light vp-code"
                                                             tabindex="0"><code><span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">&lt;?</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;">php</span></span>
@@ -903,10 +915,11 @@
                                                 </li>
                                                 <li>
                                                     <p><strong>Required Permissions</strong></p>
-                                                    <p>If you are facing any issues regarding the permissions, then you need to run the following
+                                                    <p>If you are facing any issues regarding the permissions, then you
+                                                        need to run the following
                                                         command in your project directory:</p>
-                                                    <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                            class="lang">sh</span>
+                                                    <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                            class="copy"></button><span class="lang">sh</span>
                                                         <pre class="shiki shiki-themes dracula github-light vp-code"
                                                             tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sudo</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> chmod</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> -R</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> o+rw</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> bootstrap/cache</span></span>
                                     <span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sudo</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> chmod</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> -R</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> o+rw</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> storage</span></span></code></pre>
@@ -915,8 +928,10 @@
                                             </ul>
                                             <div class="tip custom-block">
                                                 <p class="custom-block-title">TIP</p>
-                                                <p>As above code, we have changed all paths as per our folder structure.</p>
-                                                <p>Note: <code>public_html</code> folder may differ from server to server.</p>
+                                                <p>As above code, we have changed all paths as per our folder structure.
+                                                </p>
+                                                <p>Note: <code>public_html</code> folder may differ from server to
+                                                    server.</p>
                                             </div>
                                             <p><em>Congratulation! You have successfully deployed the package.</em></p>
                                         </div>
@@ -927,10 +942,9 @@
                                         <span data-v-0e0099f1="" class="visually-hidden"
                                             id="doc-footer-aria-label">Pager</span>
                                         <div data-v-0e0099f1="" class="pager"><a data-v-0e0099f1=""
-                                                class="VPLink link pager-link prev"
-                                                href=><span
-                                                    data-v-0e0099f1="" class="desc">Previous page</span><span
-                                                    data-v-0e0099f1="" class="title">Video Tutorials</span></a></div>
+                                                class="VPLink link pager-link prev" href=""><span data-v-0e0099f1=""
+                                                    class="desc">Previous page</span><span data-v-0e0099f1=""
+                                                    class="title">Video Tutorials</span></a></div>
                                         <div data-v-0e0099f1="" class="pager"><a data-v-0e0099f1=""
                                                 class="VPLink link pager-link next" href="Vscode _ doc.html"><span
                                                     data-v-0e0099f1="" class="desc">Next page</span><span
