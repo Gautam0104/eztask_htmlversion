@@ -17,7 +17,7 @@
     <!-- End Google Tag Manager -->
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Access Control | Thunderbees</title>
+    <title>Installation | Thunderbees</title>
     <meta name="description" content="Production Ready, Carefully Crafted, Extensive Vuetify Admin Template">
     <meta name="generator" content="VitePress v1.3.1">
     <link rel="preload stylesheet"
@@ -117,21 +117,24 @@
                                             class="visually-hidden" data-v-96c787e6=""> Main Navigation
                                         </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink active" href=""
                                             tabindex="0" data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
-                                                data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--]--><!--[-->
+                                                data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
-
                                             <div class="menu" data-v-77cf94f3="">
                                                 <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
                                                     <div class="items" data-v-0b06d54e=""><!--[--><!--[-->
-                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880="">
+                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880=""><a
+                                                                class="VPLink link" href=""
+                                                                data-v-d5fb1880=""><!--[-->Contribution<!--]--></a>
                                                         </div><!--]--><!--[-->
-                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880="">
-                                                        </div>
+                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880=""><a
+                                                                class="VPLink link vp-external-link-icon" href=""
+                                                                target="_blank" rel="noreferrer"
+                                                                data-v-d5fb1880=""><!--[-->Changelog<!--]--></a></div>
                                                         <!--]--><!--]-->
                                                     </div><!--[--><!--]-->
                                                 </div>
                                             </div>
-                                        </div><!--]--><!--[-->
+                                        </div><!--]--><!--[--><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
 
                                             <div class="menu" data-v-77cf94f3="">
@@ -155,7 +158,7 @@
                                                     </div><!--[--><!--]-->
                                                 </div>
                                             </div>
-                                        </div><!--]--><!--[--><!--]--><!--]-->
+                                        </div><!--]--><!--[--></a><!--]--><!--]-->
                                     </nav><!---->
                                     <div class="VPNavBarAppearance appearance" data-v-ea10065c="" data-v-c44248a2="">
                                         <button class="VPSwitch VPSwitchAppearance" type="button" role="switch"
@@ -750,426 +753,184 @@
                             <div data-v-f617e204="" class="content-container">
                                 <main data-v-f617e204="" class="main">
                                     <div data-v-f617e204=""
-                                        class="vp-doc _vuexy-vuejs-admin-template_documentation_guide_access-control"
+                                        class="vp-doc _vuexy-vuejs-admin-template_documentation_guide_laravel-integration_installation"
                                         style="position: relative;">
                                         <div>
-                                            <h1 id="access-control" tabindex="-1">Access control <a
-                                                    class="header-anchor" href=""
-                                                    aria-label="Permalink to &quot;Access control&quot;">​</a></h1>
-                                            <p>We use <a href="https://casl.js.org/" target="_blank"
-                                                    rel="noreferrer">CASL</a> package to provide access control in our
-                                                template.</p>
-                                            <p>CASL may look complex at first so please make sure you first read docs
-                                                carefully and understand base logic of Access Control to proceed
-                                                further.</p>
-                                            <h2 id="overview" tabindex="-1">Overview <a class="header-anchor" href=""
-                                                    aria-label="Permalink to &quot;Overview&quot;">​</a></h2>
-                                            <p>You can find access control related configuration in
-                                                <code>src/plugins/casl</code> directory.
+                                            <h1 id="installation" tabindex="-1">Installation <a class="header-anchor"
+                                                    href="#installation"
+                                                    aria-label="Permalink to &quot;Installation&quot;">​</a></h1>
+                                            <p>Given below are the steps you need to follow to install the
+                                                <strong>full-version</strong> /
+                                                <strong>starter-kit</strong> on your system:
                                             </p>
+                                            <div class="warning custom-block">
+                                                <p class="custom-block-title">System Requirements</p>
+                                                <ul>
+                                                    <li>Node: LTS</li>
+                                                    <li>PHP: 8.2.0 or greater</li>
+                                                    <li>Composer: 2.4.2</li>
+                                                </ul>
+                                            </div>
+                                            <h2 id="guide" tabindex="-1">Guide <a class="header-anchor" href="#guide"
+                                                    aria-label="Permalink to &quot;Guide&quot;">​</a></h2>
                                             <ul>
-                                                <li><code>index.ts</code>: It will read the abilities from
-                                                    <code>userAbilityRules</code> cookie and will define
-                                                    <code>initialAbility</code> using <code>userAbilityRules</code>.
-                                                    then, it will initialize <code>CASL</code> in our template with
-                                                    <code>initialAbility</code>.
+                                                <li>
+                                                    <p>Download our template from marketplace</p>
                                                 </li>
-                                                <li><code>ability.ts</code>: It exports the <code>Ability</code>
-                                                    instance of <code>CASL</code> for defining abilities. In typescript
-                                                    version, It also exports types for <code>Actions</code> and
-                                                    <code>Subjects</code>.
+                                                <li>
+                                                    <p>Unzip it in your desired location</p>
+                                                    <div class="danger custom-block">
+                                                        <p class="custom-block-title">Getting Error: [plugin:vite:css]
+                                                            [sass] Can't find stylesheet to
+                                                            import.</p>
+                                                        <p>You might get this error on Windows OS if you unzip the
+                                                            template in a directory which has
+                                                            <strong>space in its path</strong>. For example,
+                                                            <code>C:\Users\My User\Documents\my-project</code>. Notice,
+                                                            there is a space in
+                                                            <code>My User</code> directory name.
+                                                        </p>
+                                                        <p>To avoid this error, please make sure you unzip the template
+                                                            in a directory which doesn't
+                                                            have space in its path. For example,
+                                                            <code>C:\Users\MyUser\Documents\my-project</code>.
+                                                            Additionally, also make sure your project it self doesn't
+                                                            have space in its name. For
+                                                            example, <code>my-project</code> is fine but
+                                                            <code>my project</code> is not.
+                                                        </p>
+                                                        <p>We already reported the issue to vuetify team. You can track
+                                                            the issue here: <a
+                                                                href="https://github.com/vuetifyjs/vuetify-loader/issues/300"
+                                                                target="_blank" rel="noreferrer">#300</a></p>
+                                                    </div>
                                                 </li>
-                                                <li><code>shims-ability.d.ts</code>: This is only available in our
-                                                    TypeScript template. This file is shims file for CASL.</li>
-                                                <li><code>useAbility.ts</code>: This file provides
-                                                    <code>useAbility</code> composable for ease so you don't have to
-                                                    import <code>ability</code> from <code>ability.ts</code> file.
+                                                <li>
+                                                    <p>Navigate to the project you want to run
+                                                        (<code>full-version</code> or <code>starter-kit</code>).
+                                                        To make sure you are in right directory check if that directory
+                                                        contains files like
+                                                        <code>package.json</code>, <code>.gitignore</code> etc.
+                                                    </p>
                                                 </li>
                                             </ul>
-                                            <div class="tip custom-block">
-                                                <p class="custom-block-title"><code>useAbility</code></p>
-                                                <p>By default, CASL provides a <code>useAbility</code> composable, but
-                                                    using it directly would require us to import a <code>ability</code>
-                                                    type from <code>ability.ts</code> file every time we use it. To
-                                                    avoid this, we've defined our custom <code>useAbility</code>
-                                                    composable in <code>useAbility.ts</code> file.</p>
-                                                <p>Now, whenever we need to use the <code>useAbility</code> in our
-                                                    templates, we simply import it from <code>useAbility.ts</code>
-                                                    file.This way, we don't have to worry about importing additional
-                                                    type every time we work with abilities in our application.</p>
-                                            </div>
-                                            <h2 id="using-acl" tabindex="-1">Using ACL <a class="header-anchor" href=""
-                                                    aria-label="Permalink to &quot;Using ACL&quot;">​</a></h2>
-                                            <p>If you want show/hide anything based on user's ability, you can use
-                                                global <code>$can</code> property.</p>
-                                            <p>Let's create a new page with below content:</p>
-                                            <div class="vp-code-group vp-adaptive-theme">
-                                                <div class="tabs"><input type="radio" name="group-K7AFF"
-                                                        id="tab-7A-Vp0T" checked=""><label
-                                                        for="tab-7A-Vp0T">TS</label><input type="radio"
-                                                        name="group-K7AFF" id="tab-w-DgYcm"><label
-                                                        for="tab-w-DgYcm">JS</label></div>
-                                                <div class="blocks">
-                                                    <div class="language-vue vp-adaptive-theme active"><button
-                                                            title="Copy Code" class="copy"></button><span
-                                                            class="lang">vue</span>
+                                            <details class="details custom-block">
+                                                <summary>Copying from unzipped directory</summary>
+                                                <p>If you are copying file from unzipped directory then make sure to
+                                                    copy all the hidden files as well,
+                                                    like <code>.eslintrc.js</code>, <code>.gitignore</code>, etc.</p>
+                                                <p>To make sure, match the zip file content and extracted directory.</p>
+                                                <p>Enable show hidden files feature in your system to view the hidden
+                                                    files if you can't see them in
+                                                    extracted directory.</p>
+                                            </details>
+                                            <ul>
+                                                <li>
+                                                    <p>Open the terminal in that directory &amp; to install the composer
+                                                        packages, run the following
+                                                        command:</p>
+                                                    <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                            class="copy"></button><span class="lang">sh</span>
                                                         <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;--shiki-dark-font-style:italic;--shiki-light-font-style:inherit;"> lang</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">=</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">ts</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;--shiki-dark-font-style:italic;--shiki-light-font-style:inherit;"> setup</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">definePage</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">({</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  meta</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> {</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">AclDemo</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  },</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">})</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> user</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> {</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> as</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">  // `subject` property type is `Subjects` ("src/plugins/casl/AppAbility.ts")</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Admin</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> as</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">}</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">template</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  &lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> v-if</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">=</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">$can</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(user.action, user.subject)</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    We have earned 50k more compared to previous week</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  &lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  &lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> v-else</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    You don't have enough permission to view the finance data</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  &lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">template</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span></code></pre>
+                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">composer</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> install</span></span></code></pre>
                                                     </div>
-                                                    <div class="language-vue vp-adaptive-theme"><button
-                                                            title="Copy Code" class="copy"></button><span
-                                                            class="lang">vue</span>
+                                                </li>
+                                                <li>
+                                                    <p>Run the following command to copy <code>.env.example</code> file
+                                                        content into <code>.env</code>
+                                                        file.</p>
+                                                    <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                            class="copy"></button><span class="lang">sh</span>
                                                         <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;--shiki-dark-font-style:italic;--shiki-light-font-style:inherit;"> lang</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">=</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">ts</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;--shiki-dark-font-style:italic;--shiki-light-font-style:inherit;"> setup</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">definePage</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">({</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  meta</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> {</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">AclDemo</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  },</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">})</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> user</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> {</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Admin</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">}</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">template</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  &lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> v-if</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">=</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">$can</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(user.action, user.subject)</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    We have earned 50k more compared to previous week</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  &lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  &lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> v-else</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    You don't have enough permission to view the finance data</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  &lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">template</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span></code></pre>
+                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">cp</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> .env.example</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> .env</span></span></code></pre>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <h2 id="updating-ability" tabindex="-1">Updating ability <a
-                                                    class="header-anchor" href=""
-                                                    aria-label="Permalink to &quot;Updating ability&quot;">​</a></h2>
-                                            <h3 id="using-new-ability" tabindex="-1">Using new ability <a
-                                                    class="header-anchor" href=""
-                                                    aria-label="Permalink to &quot;Using new ability&quot;">​</a></h3>
-                                            <p>You will definitely update ability in your app, most probably after
-                                                login. To update the ability you have to use <code>useAbility</code>
-                                                composable like below:</p>
-                                            <div class="vp-code-group vp-adaptive-theme">
-                                                <div class="tabs"><input type="radio" name="group-rodux"
-                                                        id="tab-Fm0SGrn" checked=""><label
-                                                        for="tab-Fm0SGrn">TS</label><input type="radio"
-                                                        name="group-rodux" id="tab-DyMgdjA"><label
-                                                        for="tab-DyMgdjA">JS</label></div>
-                                                <div class="blocks">
-                                                    <div class="language-ts vp-adaptive-theme active"><button
-                                                            title="Copy Code" class="copy"></button><span
-                                                            class="lang">ts</span>
+                                                </li>
+                                                <li>
+                                                    <p>Run the following command to generate the key (You can also edit
+                                                        your data base credentials here)
+                                                    </p>
+                                                    <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                            class="copy"></button><span class="lang">sh</span>
                                                         <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                            tabindex="0"><code><span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// You will get below object on login's successful API response</span></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> userAbilities</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> [{</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Admin</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">}]</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Use composable</span></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> ability</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;"> useAbility</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">()</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Update the ability using `update` method</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">ability.</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">update</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(userAbilities)</span></span></code></pre>
+                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">php</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> artisan</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> key:generate</span></span></code></pre>
                                                     </div>
-                                                    <div class="language-js vp-adaptive-theme"><button title="Copy Code"
-                                                            class="copy"></button><span class="lang">js</span>
+                                                </li>
+                                                <li>
+                                                    <p>By running the following command, you will be able to get all the
+                                                        dependencies in your
+                                                        node_modules folder:</p>
+                                                    <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                            class="copy"></button><span class="lang">sh</span>
                                                         <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">import</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> { useAbility } </span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">from</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">@casl/vue</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// You will get below object on login's successful API response</span></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> userAbilities</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> [{</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Admin</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">}]</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Use composable</span></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> ability</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;"> useAbility</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">()</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Update the ability using `update` method</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">ability.</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">update</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(userAbilities)</span></span></code></pre>
+                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">pnpm</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> install</span></span></code></pre>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <p>That's all for updating ability. However, this ability update will get
-                                                lost on page reload. To persist ability between page reload/close, you
-                                                have to add ability to cookies:</p>
-                                            <div class="vp-code-group vp-adaptive-theme">
-                                                <div class="tabs"><input type="radio" name="group--FTax"
-                                                        id="tab-1Zwn4Y6" checked=""><label
-                                                        for="tab-1Zwn4Y6">TS</label><input type="radio"
-                                                        name="group--FTax" id="tab-wSVZ3JU"><label
-                                                        for="tab-wSVZ3JU">JS</label></div>
-                                                <div class="blocks">
-                                                    <div class="language-ts vp-adaptive-theme active"><button
-                                                            title="Copy Code" class="copy"></button><span
-                                                            class="lang">ts</span>
+                                                </li>
+                                                <li>
+                                                    <p>You can run the development server via the dev command, which is
+                                                        useful while developing locally.
+                                                        The development server will automatically detect changes to your
+                                                        files and instantly reflect
+                                                        them in any open browser windows.</p>
+                                                    <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                            class="copy"></button><span class="lang">sh</span>
                                                         <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                            tabindex="0"><code><span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// You will get below object on login's successful API response</span></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> userAbilities</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> [{</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Admin</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">}]</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Use composable</span></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> ability</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;"> useAbility</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">()</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Update the ability using `update` method</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">ability.</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">update</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(userAbilities)</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Adding ability to cookies so template can pick it up on page reload</span></span>
-                                <span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">useCookie</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">userAbilityRules</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">).value </span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> userAbilityRules</span></span></code></pre>
+                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">pnpm</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> run</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> dev</span></span></code></pre>
                                                     </div>
-                                                    <div class="language-js vp-adaptive-theme"><button title="Copy Code"
-                                                            class="copy"></button><span class="lang">js</span>
+                                                </li>
+                                                <li>
+                                                    <p>To serve the application you need to run the following command in
+                                                        the project directory. (This
+                                                        will give you an address with port number 8000)</p>
+                                                    <p>Now navigate to the given address you will see your application
+                                                        is running.</p>
+                                                    <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                            class="copy"></button><span class="lang">sh</span>
                                                         <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// You will get below object on login's successful API response</span></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> userAbilities</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> [{</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Admin</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">}]</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Use composable</span></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> ability</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;"> useAbility</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">()</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Update the ability using `update` method</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">ability.</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">update</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(userAbilities)</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Adding ability to cookie so template can pick it up on page reload</span></span>
-                                <span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">useCookie</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">userAbilityRules</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">).value </span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> userAbilityRules</span></span></code></pre>
+                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">php</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> artisan</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> serve</span></span></code></pre>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="warning custom-block">
-                                                <p class="custom-block-title">WARNING</p>
-                                                <p>When you store user ability in cookies, cookie key name must be
-                                                    <code>userAbilities</code>. If you want to use different key name,
-                                                    make sure it is same as you have used in
-                                                    <code>src/plugins/casl/index.ts</code> for retrieving user ability.
-                                                </p>
-                                            </div>
-                                            <h3 id="resetting-ability" tabindex="-1">Resetting ability <a
-                                                    class="header-anchor" href=""
-                                                    aria-label="Permalink to &quot;Resetting ability&quot;">​</a></h3>
-                                            <p>On logout we need to reset ability. Resetting ability is same as updating
-                                                to new ability, only difference is that we will pass empty array.</p>
-                                            <div class="language-ts vp-adaptive-theme"><button title="Copy Code"
-                                                    class="copy"></button><span class="lang">ts</span>
-                                                <pre class="shiki shiki-themes dracula github-light has-highlighted vp-code"
-                                                    tabindex="0"><code><span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Use composable</span></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">const</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#005CC5;"> ability</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> =</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;"> useAbility</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">()</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Update the ability using `update` method</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">ability.</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">update</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">([]) </span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Remove "userAbilities" from cookie</span></span>
-                                <span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">useCookie</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">userAbilityRules</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">).value </span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> null</span></span></code></pre>
-                                            </div>
-                                            <h2 id="route-protection" tabindex="-1">Route Protection <a
-                                                    class="header-anchor" href=""
-                                                    aria-label="Permalink to &quot;Route Protection&quot;">​</a></h2>
-                                            <p>We have configured <a
-                                                    href="https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards"
-                                                    target="_blank" rel="noreferrer"><code>router.beforeEach</code></a>
-                                                hook so users can only visit the route they have ability to. You can
-                                                check its source code in <code>src/plugins/1.router/index.ts</code>
-                                                file.</p>
-                                            <p>For protecting routes based on ability, all you have to do is add meta to
-                                                <code>definePage</code> macro block.
-                                            </p>
-                                            <p>In <a href="">How
-                                                    to create a new page</a> guide we created a dashboard analytics
-                                                page. Let's add <code>action</code> &amp; <code>subject</code> meta to
-                                                this route by updating the file as below:</p>
-                                            <div class="vp-code-group vp-adaptive-theme">
-                                                <div class="tabs"><input type="radio" name="group-kiHpt"
-                                                        id="tab-yBCkfu6" checked=""><label
-                                                        for="tab-yBCkfu6">Vue</label><input type="radio"
-                                                        name="group-kiHpt" id="tab-jq0bSoO"><label
-                                                        for="tab-jq0bSoO">Nuxt</label></div>
-                                                <div class="blocks">
-                                                    <div class="language-vue vp-adaptive-theme active"><button
-                                                            title="Copy Code" class="copy"></button><span
-                                                            class="lang">vue</span>
+                                                    <p>To change the port address, run the following command:</p>
+                                                    <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                            class="copy"></button><span class="lang">sh</span>
                                                         <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;--shiki-dark-font-style:italic;--shiki-light-font-style:inherit;"> lang</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">=</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">ts</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;--shiki-dark-font-style:italic;--shiki-light-font-style:inherit;"> setup</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">definePage</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">({ </span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  meta</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> {</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Web</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  },</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">})</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">template</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  &lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;This is analytics page inside dashboard directory.&lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">template</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span></code></pre>
+                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">php</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> artisan</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> serve</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> --port=8080</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">    //</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> For</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> port</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> 8080</span></span>
+                                <span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sudo</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> php</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> artisan</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> serve</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> --port=80</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> //</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> If</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> you</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> want</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> to</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> run</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> it</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> on</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> port</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> 80,</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> you</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> probably</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> need</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> to</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> sudo.</span></span></code></pre>
                                                     </div>
-                                                    <div class="language-vue vp-adaptive-theme"><button
-                                                            title="Copy Code" class="copy"></button><span
-                                                            class="lang">vue</span>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Building for Production:</strong> Running the
+                                                        <code>build</code> command will version and
+                                                        bundle your application's assets and get them ready for you to
+                                                        deploy to production:
+                                                    </p>
+                                                    <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                            class="copy"></button><span class="lang">sh</span>
                                                         <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;--shiki-dark-font-style:italic;--shiki-light-font-style:inherit;"> lang</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">=</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">ts</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;--shiki-dark-font-style:italic;--shiki-light-font-style:inherit;"> setup</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">definePageMeta</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">({</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Web</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">})</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">script</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
+                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;"># Build and version the assets for production...</span></span>
                                 <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">template</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  &lt;</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;This is analytics page inside dashboard directory.&lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">p</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&lt;/</span><span style="--shiki-dark:#FF79C6;--shiki-light:#22863A;">template</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">&gt;</span></span></code></pre>
+                                <span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">pnpm</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> run</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> build</span></span></code></pre>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <p>This will only allow user to view the analytics dashboard if user have
-                                                above mentioned ability.</p>
-                                            <p>Yes, That's it. All you need is these two meta for preventing access to
-                                                your private route.</p>
-                                            <h3 id="omitting-defining-action-subject-for-route" tabindex="-1">Omitting
-                                                Defining <code>action</code> &amp; <code>subject</code> for route <a
-                                                    class="header-anchor" href=""
-                                                    aria-label="Permalink to &quot;Omitting Defining `action` &amp; `subject` for route&quot;">​</a>
-                                            </h3>
-                                            <p>You might have noticed that we haven't defined <code>action</code> &amp;
-                                                <code>subject</code> meta for pages/routes. This is because in our demo,
-                                                <strong>admin user</strong> have below ability specified:
-                                            </p>
-                                            <div class="language-js vp-adaptive-theme"><button title="Copy Code"
-                                                    class="copy"></button><span class="lang">js</span>
-                                                <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                    tabindex="0"><code><span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">{</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#6F42C1;">  action</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">: </span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">manage</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#6F42C1;">  subject</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">: </span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">all</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">}</span></span></code></pre>
-                                            </div>
-                                            <p><code>manage</code> and <code>all</code> are special keywords in CASL.
-                                                manage represents any action and all represents any subject.</p>
-                                            <p>If user have above mentioned ability and you don't define
-                                                <code>action</code> &amp; <code>subject</code> meta for route, then user
-                                                can still access all routes.
-                                            </p>
-                                            <p>Hence, we omitted defining <code>action</code> and <code>subject</code>
-                                                meta for pages/routes in our source code.</p>
-                                            <h2 id="show-hide-navigation-items" tabindex="-1">Show/Hide navigation items
-                                                <a class="header-anchor" href=""
-                                                    aria-label="Permalink to &quot;Show/Hide navigation items&quot;">​</a>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <p><strong>Related FAQ:</strong></p>
+                                            <ul>
+                                                <li><a href=>npm
+                                                        install or yarn install warnings or installation warnings</a>
+                                                </li>
+                                            </ul>
+                                            <h2 id="required-permissions" tabindex="-1">Required Permissions <a
+                                                    class="header-anchor" href="#required-permissions"
+                                                    aria-label="Permalink to &quot;Required Permissions&quot;">​</a>
                                             </h2>
-                                            <p>Our template allows hiding &amp; showing navigation items based on user
-                                                ability.</p>
-                                            <p>When you define navigation items in
-                                                <code>src/navigation/{vertical|horizontal}/index.ts</code> along with
-                                                properties like <code>title</code>, you can write <code>action</code>
-                                                &amp; <code>subject</code> for hiding item if user don't have enough
-                                                ability.
-                                            </p>
-                                            <div class="vp-code-group vp-adaptive-theme">
-                                                <div class="tabs"><input type="radio" name="group-JAaGE"
-                                                        id="tab-9UoO9kW" checked=""><label
-                                                        for="tab-9UoO9kW">TS</label><input type="radio"
-                                                        name="group-JAaGE" id="tab-EupTEP0"><label
-                                                        for="tab-EupTEP0">JS</label></div>
-                                                <div class="blocks">
-                                                    <div class="language-ts vp-adaptive-theme active"><button
-                                                            title="Copy Code" class="copy"></button><span
-                                                            class="lang">ts</span>
-                                                        <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">import</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> type</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> { VerticalNavItems } </span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">from</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">@layouts/types</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span></span>
-                                <span class="line"></span>
-                                <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">export</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> default</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> [</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  {</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    title</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Home</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    icon</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">i-mdi-home</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    to</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">index</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Post</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  },</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">] </span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">as</span><span style="--shiki-dark:#8BE9FD;--shiki-light:#6F42C1;--shiki-dark-font-style:italic;--shiki-light-font-style:inherit;"> VerticalNavItems</span></span></code></pre>
-                                                    </div>
-                                                    <div class="language-js vp-adaptive-theme"><button title="Copy Code"
-                                                            class="copy"></button><span class="lang">js</span>
-                                                        <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">export</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> default</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> [</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  {</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    title</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Home</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    icon</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">i-mdi-home</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    to</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">index</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    action</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">read</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">    subject</span><span style="--shiki-dark:#FF79C6;--shiki-light:#24292E;">:</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">Post</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">,</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  },</span></span>
-                                <span class="line highlighted"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">]</span></span></code></pre>
-                                                    </div>
-                                                </div>
+                                            <p>If you are facing any issues regarding the permissions, then you need to
+                                                run the following command in
+                                                your project directory:</p>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
+                                                <pre class="shiki shiki-themes dracula github-light vp-code"
+                                                    tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sudo</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> chmod</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> -R</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> o+rw</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> bootstrap/cache</span></span>
+                                <span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sudo</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> chmod</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> -R</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> o+rw</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> storage</span></span></code></pre>
                                             </div>
-                                            <h3 id="omitting-defining-resource-and-action-for-nav-groups" tabindex="-1">
-                                                Omitting defining resource and action for nav groups <a
-                                                    class="header-anchor" href=""
-                                                    aria-label="Permalink to &quot;Omitting defining resource and action for nav groups&quot;">​</a>
-                                            </h3>
-                                            <p>You can optionally define resource &amp; action on navigation groups.</p>
-                                            <p>Navigation groups are intelligently hide and show them selves based on
-                                                their children.</p>
-                                            <div class="tip custom-block">
-                                                <p class="custom-block-title">NOTE</p>
-                                                <p>"can be viewed" means ACL ability is resolved to true and user can
-                                                    view it. "hidden" means ACL ability is resolved to false and user
-                                                    can't view it.</p>
-                                            </div>
-                                            <ol>
-                                                <li>If group can be viewed can any of it's child can also be viewed then
-                                                    group will be visible.</li>
-                                                <li>If Group can be viewed and all it's children are hidden then group
-                                                    also got hidden.</li>
-                                                <li>If Group can't be viewed then in all cases group and it's children
-                                                    will be hidden. It will be hidden even if any of or all of it's
-                                                    children can be viewed.</li>
-                                            </ol>
-                                            <div class="warning custom-block">
-                                                <p class="custom-block-title">CAVEAT</p>
-                                                <p>As header in vertical navigation menu is independent of it's child
-                                                    items if you want to hide header if all it's below items are hidden
-                                                    then you need to specify resource &amp; action as well with other
-                                                    following items.</p>
-                                            </div>
-                                            <p><strong>Related Pages</strong></p>
-                                            <ul>
-                                                <li><a href="">Understand
-                                                        Authentication &amp; ACL - First Visit</a></li>
-                                                <li><a href="">Understanding
-                                                        Login Flow</a></li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </main>

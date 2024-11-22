@@ -17,7 +17,7 @@
     <!-- End Google Tag Manager -->
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Layout Plugin| Thunderbees</title>
+    <title>Dialog | Thunderbees</title>
     <meta name="description" content="Production Ready, Carefully Crafted, Extensive Vuetify Admin Template">
     <meta name="generator" content="VitePress v1.3.1">
     <link rel="preload stylesheet"
@@ -119,21 +119,20 @@
                                             tabindex="0" data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
                                                 data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
-
+                                            
                                             <div class="menu" data-v-77cf94f3="">
                                                 <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
                                                     <div class="items" data-v-0b06d54e=""><!--[--><!--[-->
                                                         <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880="">
                                                         </div><!--]--><!--[-->
-                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880="">
-                                                        </div>
+                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880=""></div>
                                                         <!--]--><!--]-->
                                                     </div><!--[--><!--]-->
                                                 </div>
                                             </div>
                                         </div><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
-
+                                            
                                             <div class="menu" data-v-77cf94f3="">
                                                 <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
                                                     <div class="items" data-v-0b06d54e=""><!--[--><!--[-->
@@ -749,65 +748,51 @@
                         <div data-v-f617e204="" class="content">
                             <div data-v-f617e204="" class="content-container">
                                 <main class="main" data-v-f617e204="">
-                                    <div style="position:relative;"
-                                        class="vp-doc _vuexy-vuejs-admin-template_documentation_guide_layouts_layouts-plugin"
+                                    <div style="position:relative;" class="vp-doc _vuexy-vuejs-admin-template_documentation_guide_components_dialog"
                                         data-v-f617e204="">
                                         <div>
-                                            <h1 id="layouts-plugin" tabindex="-1">Layouts Plugin <a
-                                                    class="header-anchor" href="#layouts-plugin"
-                                                    aria-label="Permalink to &quot;Layouts Plugin&quot;">​</a></h1>
-                                            <p>We provide framework independent layout system as plugin. You can use it
-                                                to create your own layouts easily in any vue project with any framework.
-                                            </p>
-                                            <h2 id="usage" tabindex="-1">Usage <a class="header-anchor" href="#usage"
-                                                    aria-label="Permalink to &quot;Usage&quot;">​</a></h2>
-                                            <p>To use layouts plugin you have to register it like other plugins.</p>
-                                            <ol>
-                                                <li>
-                                                    <p>Create a new plugin file <code>@/plugins/layouts.ts</code> with
-                                                        below content:</p>
-                                                    <div class="language-ts vp-adaptive-theme"><button title="Copy Code"
-                                                            class="copy"></button><span class="lang">ts</span>
-                                                        <pre class="shiki shiki-themes dracula github-light vp-code"
-                                                            tabindex="0"><code><span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// Layouts plugin</span></span>
-                                    <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">import</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> { createLayouts } </span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">from</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">@layouts</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span></span>
-                                    <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// styles</span></span>
-                                    <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">import</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">@layouts/styles/index.scss</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span></span>
-                                    <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// get layout config from themeConfig</span></span>
-                                    <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">import</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> { layoutConfig } </span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">from</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">@themeConfig</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span></span>
-                                    <span class="line"></span>
-                                    <span class="line"><span style="--shiki-dark:#6272A4;--shiki-light:#6A737D;">// ℹ️ We generate layout config from our themeConfig so you don't have to write config twice</span></span>
-                                    <span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">export</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;"> default</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;"> createLayouts</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(layoutConfig)</span></span></code></pre>
-                                                    </div>
-                                                    <div class="tip custom-block">
-                                                        <p class="custom-block-title">TIP</p>
-                                                        <p><code>themeConfig.ts</code> file uses
-                                                            <code>defineThemeConfig</code> function which return two
-                                                            objects and one of them is configuration of layouts plugin.
-                                                            Hence, you can use this config and omit defining the config
-                                                            twice.
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <p>Import and use layouts plugin in <code>main.ts</code></p>
-                                                    <div class="language-ts vp-adaptive-theme"><button title="Copy Code"
-                                                            class="copy"></button><span class="lang">ts</span>
-                                                        <pre class="shiki shiki-themes dracula github-light has-diff vp-code"
-                                                            tabindex="0"><code><span class="line diff add"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">import</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;"> layoutsPlugin </span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">from</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> '</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">@/plugins/layouts</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span></span>
-                                    <span class="line diff add"><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">app.</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">use</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">(layoutsPlugin) </span></span></code></pre>
-                                                    </div>
-                                                </li>
-                                            </ol><br>
-                                            <p>That's all. You have successfully configured layouts plugin. 🥳</p>
-                                            <h2 id="essentials" tabindex="-1">Essentials <a class="header-anchor"
-                                                    href="#essentials"
-                                                    aria-label="Permalink to &quot;Essentials&quot;">​</a></h2>
-                                            <p>layouts plugin don't provide any layouts, instead it provides layout
-                                                essentials like layout components, composable, bare minimum styles for
-                                                layouts, and some helper functions.</p>
-                                            <p>Feel free to explore and checkout the code in <code>@/@layouts</code>
-                                                dir.</p>
+                                            <h1 id="dialog" tabindex="-1">Dialog <a class="header-anchor" href="#dialog"
+                                                    aria-label="Permalink to &quot;Dialog&quot;">​</a></h1>
+                                            <p>Dialog component is slightly modified to make it more beautiful. Let's have a glance.</p>
+                                            <h2 id="responsive-classes" tabindex="-1">Responsive Classes <a class="header-anchor"
+                                                    href="#responsive-classes" aria-label="Permalink to &quot;Responsive Classes&quot;">​</a></h2>
+                                            <p>Dialog have three optional sizes, available via modifier classes to be placed on <code>v-dialog</code>.
+                                                These sizes kick in at certain breakpoints to avoid screen overflow on narrower viewport.</p>
+                                            <ul>
+                                                <li><code>v-dialog-sm</code></li>
+                                                <li><code>v-dialog-lg</code></li>
+                                                <li><code>v-dialog-xl</code></li>
+                                            </ul>
+                                            <table tabindex="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Classes</th>
+                                                        <th>&lt; 576px</th>
+                                                        <th>&lt; 992px</th>
+                                                        <th>&lt; 1200px</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><code>v-dialog-sm</code></td>
+                                                        <td><code>width:565px</code></td>
+                                                        <td><code>width:565px</code></td>
+                                                        <td><code>width:565px</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>v-dialog-lg</code></td>
+                                                        <td><code>width:565px</code></td>
+                                                        <td><code>width:865px</code></td>
+                                                        <td><code>width:865px</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>v-dialog-xl</code></td>
+                                                        <td><code>width:565px</code></td>
+                                                        <td><code>width:865px</code></td>
+                                                        <td><code>width:1165px</code></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </main>
@@ -817,7 +802,7 @@
                                             id="doc-footer-aria-label">Pager</span>
                                         <div data-v-0e0099f1="" class="pager"><a data-v-0e0099f1=""
                                                 class="VPLink link pager-link prev"
-                                                href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/video-tutorials.html"><span
+                                                href=""><span
                                                     data-v-0e0099f1="" class="desc">Previous page</span><span
                                                     data-v-0e0099f1="" class="title">Video Tutorials</span></a></div>
                                         <div data-v-0e0099f1="" class="pager"><a data-v-0e0099f1=""
