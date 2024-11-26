@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0092)https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/installation.html -->
-<html lang="en-US" dir="ltr" class="dark">
+<html lang="en-US" dir="ltr" class="" id="theme">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,20 +20,15 @@
     <title>Icons | Thunderbees</title>
     <meta name="description" content="Production Ready, Carefully Crafted, Extensive Vuetify Admin Template">
     <meta name="generator" content="VitePress v1.3.1">
-    <link rel="preload stylesheet"
-        href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/style.qV3dcLt7.css"
-        as="style">
+    <link rel="preload stylesheet" href="doc_files/test.css" as="style">
 
     <script type="module" src="./Installation _ doc_files/app.DkM2pYB_.js.download"></script>
     <link rel="preload"
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/inter-roman-latin.Di8DUHzh.woff2"
         as="font" type="font/woff2" crossorigin="">
-    <link rel="modulepreload"
-        href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/chunks/framework.COb58QXy.js">
-    <link rel="modulepreload"
-        href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/chunks/theme.Ce9B1eHe.js">
-    <link rel="modulepreload"
-        href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/index.md.yTezCVUi.lean.js">
+    <link rel="modulepreload" href="doc_files/assets/chunks/framework.js">
+    <link rel="modulepreload" href="doc_files/assets/chunks/theme.js">
+    <link rel="modulepreload" href="doc_files/assets/chunks/index.js">
     <link rel="icon" href="./doc_files/logo.png">
     <meta name="theme-color" content="#7367F0">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -44,12 +39,9 @@
         id="check-dark-mode">(() => { const e = localStorage.getItem("vitepress-theme-appearance") || "auto", a = window.matchMedia("(prefers-color-scheme: dark)").matches; (!e || e === "auto" ? a : e === "dark") && document.documentElement.classList.add("dark") })();</script>
     <script
         id="check-mac-os">document.documentElement.classList.toggle("mac", /Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
-    <link rel="prefetch"
-        href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_index.md.ps4gmFFW.js">
-    <link rel="prefetch"
-        href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/faq_index.md.BgONB6ux.js">
-    <link rel="prefetch"
-        href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/articles_index.md.CL620oKT.js">
+    <link rel="prefetch" href="doc_files/assets/guide/indes.js">
+    <link rel="prefetch" href="doc_files/assets/faq/index.js">
+    <link rel="prefetch" href="doc_files/assets/articles/index.js">
     <link rel="prefetch"
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/code-examples_fetching-nav-items-from-api.md.DYDnH0MI.js">
     <link rel="prefetch"
@@ -118,6 +110,13 @@
                                         </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink active" href=""
                                             tabindex="0" data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
                                                 data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--]--><!--[-->
+
+
+                                        <button class="VPSwitch VPSwitchAppearance me-2" onclick="switchTheme()">
+                                            Light |</button>
+
+                                        <button class="VPSwitch VPSwitchAppearance mx-3" onclick="switchTheme2()">
+                                            | Dark</button>
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
 
                                             <div class="menu" data-v-77cf94f3="">
@@ -132,6 +131,7 @@
                                                 </div>
                                             </div>
                                         </div><!--]--><!--[-->
+
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
 
                                             <div class="menu" data-v-77cf94f3="">
@@ -156,6 +156,7 @@
                                                 </div>
                                             </div>
                                         </div><!--]--><!--[--><!--]--><!--]-->
+
                                     </nav><!---->
                                     <div class="VPNavBarAppearance appearance" data-v-ea10065c="" data-v-c44248a2="">
                                         <button class="VPSwitch VPSwitchAppearance" type="button" role="switch"
@@ -177,15 +178,17 @@
                                                 <div class="group" data-v-a614bd68="">
                                                     <div class="item appearance" data-v-a614bd68="">
                                                         <p class="label" data-v-a614bd68="">Appearance</p>
-                                                        <div class="appearance-action" data-v-a614bd68=""><button
-                                                                class="VPSwitch VPSwitchAppearance" type="button"
+                                                        <div class="appearance-action" data-v-a614bd68="">
+                                                            <button class="VPSwitch VPSwitchAppearance" type="button"
                                                                 role="switch" title="Switch to light theme"
                                                                 aria-checked="false" data-v-a614bd68=""
                                                                 data-v-de588eec="" data-v-77375079=""><span
                                                                     class="check" data-v-77375079=""><span class="icon"
                                                                         data-v-77375079=""><!--[--><span
+                                                                            onclick="console.log('span working')"
                                                                             class="vpi-sun sun"
                                                                             data-v-de588eec=""></span><span
+                                                                            onclick="console.log('span working')"
                                                                             class="vpi-moon moon"
                                                                             data-v-de588eec=""></span><!--]--></span></span></button>
                                                         </div>
@@ -203,9 +206,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="divider" data-v-ea10065c="">
                         <div class="divider-line" data-v-ea10065c=""></div>
                     </div>
+
                 </div><!---->
             </header>
             <div data-v-4aa410e9="" data-v-2c31d08e="" class="VPLocalNav has-sidebar">
@@ -1266,6 +1271,10 @@
 
 
     <script type="text/javascript" id="" charset="">console.log("PI:GTM Worked!");</script>
+
+    <script src="doc_files/themeSwither.js"> </script>
+
+
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0092)https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/installation.html -->
-<html lang="en-US" dir="ltr" class="dark">
+<html lang="en-US" dir="ltr" class="light">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,9 +20,7 @@
     <title>Installation | Thunderbees</title>
     <meta name="description" content="Production Ready, Carefully Crafted, Extensive Vuetify Admin Template">
     <meta name="generator" content="VitePress v1.3.1">
-    <link rel="preload stylesheet"
-        href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/style.qV3dcLt7.css"
-        as="style">
+    <link rel="preload stylesheet" href="doc_files/test.css" as="style">
 
     <script type="module" src="./Installation _ doc_files/app.DkM2pYB_.js.download"></script>
     <link rel="preload"
@@ -38,8 +36,8 @@
     <meta name="theme-color" content="#7367F0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="stylesheet" href="./Installation _ doc_files/css2">
-    <link rel="stylesheet" href="./Installation _ doc_files/css2(1)">
+    <link rel="stylesheet" href="doc_files/css2">
+    <link rel="stylesheet" href="doc_files/css2(1)">
     <script
         id="check-dark-mode">(() => { const e = localStorage.getItem("vitepress-theme-appearance") || "auto", a = window.matchMedia("(prefers-color-scheme: dark)").matches; (!e || e === "auto" ? a : e === "dark") && document.documentElement.classList.add("dark") })();</script>
     <script
@@ -78,6 +76,49 @@
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_getting-started_data-fetching.md.DmRHMg1u.js">
     <link rel="prefetch"
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_authentication.md.rh304ixc.js">
+
+    <link rel="stylesheet" href="doc_files/css2.css">
+    <link rel="stylesheet" href="doc_files/css2(1).css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/node-waves/node-waves.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/plyr/plyr.css" />
+
+    <!-- Page CSS -->
+
+    <link rel="stylesheet" href="../assets/vendor/css/pages/app-academy-details.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="../assets/vendor/js/template-customizer.js"></script>
+
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
 </head>
 
 <body>
@@ -85,7 +126,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="app">
+    <div id="app" class="layout-wrapper">
         <div class="Layout" data-v-2c31d08e=""><!--[--><!--]--><!--[--><span tabindex="-1" data-v-b79a9377=""></span><a
                 href="Installation _ doc.html" class="VPSkipLink visually-hidden" data-v-b79a9377=""> Skip to content
             </a><!--]--><!---->
@@ -117,7 +158,9 @@
                                             class="visually-hidden" data-v-96c787e6=""> Main Navigation
                                         </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink active" href=""
                                             tabindex="0" data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
-                                                data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--]--><!--[-->
+                                                data-v-ae9b85a5="">Guide</span><!--]--></a>
+
+                                        <!--]--><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
 
                                             <div class="menu" data-v-77cf94f3="">
@@ -157,6 +200,32 @@
                                             </div>
                                         </div><!--]--><!--[--><!--]--><!--]-->
                                     </nav><!---->
+                                    <li class="nav-item dropdown-style-switcher dropdown">
+                                        <a class="nav-link btn btn-text-secondary btn-icon rounded-pill dropdown-toggle hide-arrow"
+                                            href="javascript:void(0);" data-bs-toggle="dropdown">
+                                            <i class="ti ti-md"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                                            <li>
+                                                <a class="dropdown-item" href="javascript:void(0);" data-theme="light">
+                                                    <span class="align-middle"><i
+                                                            class="ti ti-sun ti-md me-3"></i>Light</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="javascript:void(0);" data-theme="dark">
+                                                    <span class="align-middle"><i
+                                                            class="ti ti-moon-stars ti-md me-3"></i>Dark</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="javascript:void(0);" data-theme="system">
+                                                    <span class="align-middle"><i
+                                                            class="ti ti-device-desktop-analytics ti-md me-3"></i>System</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
                                     <div class="VPNavBarAppearance appearance" data-v-ea10065c="" data-v-c44248a2="">
                                         <button class="VPSwitch VPSwitchAppearance" type="button" role="switch"
                                             title="Switch to light theme" aria-checked="false" data-v-c44248a2=""
@@ -174,6 +243,9 @@
                                         <div class="menu" data-v-77cf94f3="">
                                             <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
                                                 <!----><!--[--><!--[--><!---->
+                                                <!-- Style Switcher -->
+
+                                                <!-- / Style Switcher-->
                                                 <div class="group" data-v-a614bd68="">
                                                     <div class="item appearance" data-v-a614bd68="">
                                                         <p class="label" data-v-a614bd68="">Appearance</p>
@@ -190,7 +262,7 @@
                                                                             data-v-de588eec=""></span><!--]--></span></span></button>
                                                         </div>
                                                     </div>
-                                                </div><!----><!--]--><!--]-->
+                                                </div><!--]-->
                                             </div>
                                         </div>
                                     </div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger"
@@ -882,16 +954,14 @@
                                                 <li>Open the dev server URL in browser.</li>
                                             </ol>
                                             <hr>
-                                            <!-- <p><strong>Related FAQ:</strong></p>
+                                            <p><strong>Related FAQ:</strong></p>
                                             <ul>
-                                                <li><a
-                                                        href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/faq/#npm-install-or-yarn-install-warnings-or-installation-warnings">npm
+                                                <li><a href="subpages/FAQ _ Vuexy.html">npm
                                                         install or yarn install warnings or installation warnings</a>
                                                 </li>
-                                                <li><a
-                                                        href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/faq/#nuxt-terminal-warnings">Nuxt
+                                                <li><a href="subpages/FAQ _ Vuexy 2.html">Nuxt
                                                         Terminal Warning</a></li>
-                                            </ul> -->
+                                            </ul>
                                             <h2 id="generating-build-for-production" tabindex="-1">Generating build for
                                                 production <a class="header-anchor"
                                                     href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/installation.html#generating-build-for-production"
@@ -1021,6 +1091,34 @@
 
 
     <script type="text/javascript" id="" charset="">console.log("PI:GTM Worked!");</script>
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/plyr/plyr.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../../assets/js/app-academy-course-details.js"></script>
+
+    <script src="doc_files/app.DkM2pYB_.js"></script>
+    <script src="doc_files/gtm.js"></script>
+    <script src="doc_files/themeSwither.js"> </script>
 </body>
 
 </html>

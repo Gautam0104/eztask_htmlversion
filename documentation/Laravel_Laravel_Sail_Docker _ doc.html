@@ -119,20 +119,21 @@
                                             tabindex="0" data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
                                                 data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
-                                            
+
                                             <div class="menu" data-v-77cf94f3="">
                                                 <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
                                                     <div class="items" data-v-0b06d54e=""><!--[--><!--[-->
                                                         <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880="">
                                                         </div><!--]--><!--[-->
-                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880=""></div>
+                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880="">
+                                                        </div>
                                                         <!--]--><!--]-->
                                                     </div><!--[--><!--]-->
                                                 </div>
                                             </div>
                                         </div><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
-                                            
+
                                             <div class="menu" data-v-77cf94f3="">
                                                 <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
                                                     <div class="items" data-v-0b06d54e=""><!--[--><!--[-->
@@ -752,123 +753,177 @@
                                         class="vp-doc _vuexy-vuejs-admin-template_documentation_guide_laravel-integration_laravel-sail-docker"
                                         data-v-f617e204="">
                                         <div>
-                                            <h1 id="laravel-sail-docker" tabindex="-1">Laravel Sail &amp; Docker <a class="header-anchor"
-                                                    href="#laravel-sail-docker" aria-label="Permalink to &quot;Laravel Sail &amp; Docker&quot;">​</a>
+                                            <h1 id="laravel-sail-docker" tabindex="-1">Laravel Sail &amp; Docker <a
+                                                    class="header-anchor" href="#laravel-sail-docker"
+                                                    aria-label="Permalink to &quot;Laravel Sail &amp; Docker&quot;">​</a>
                                             </h1>
                                             <p>This guide will show Laravel sail and docker environment.</p>
-                                            <h2 id="introduction" tabindex="-1">Introduction <a class="header-anchor" href="#introduction"
+                                            <h2 id="introduction" tabindex="-1">Introduction <a class="header-anchor"
+                                                    href="#introduction"
                                                     aria-label="Permalink to &quot;Introduction&quot;">​</a></h2>
-                                            <p>Laravel Sail is a light-weight command-line interface for interacting with Laravel's default Docker
-                                                development environment. Sail provides a great starting point for building a Laravel application using
+                                            <p>Laravel Sail is a light-weight command-line interface for interacting
+                                                with Laravel's default Docker
+                                                development environment. Sail provides a great starting point for
+                                                building a Laravel application using
                                                 PHP, MySQL, and Redis without requiring prior Docker experience.</p>
-                                            <p>At its heart, Sail is the <code>docker-compose.yml</code> file and the <code>sail</code> script that is
-                                                stored at the root of your project. The <code>sail</code> script provides a CLI with convenient methods
-                                                for interacting with the Docker containers defined by the <code>docker-compose.yml</code> file.</p>
-                                            <p>Laravel Sail is supported on <code>macOS</code>, <code>Linux</code>, and <code>Windows</code> (via WSL2).
+                                            <p>At its heart, Sail is the <code>docker-compose.yml</code> file and the
+                                                <code>sail</code> script that is
+                                                stored at the root of your project. The <code>sail</code> script
+                                                provides a CLI with convenient methods
+                                                for interacting with the Docker containers defined by the
+                                                <code>docker-compose.yml</code> file.</p>
+                                            <p>Laravel Sail is supported on <code>macOS</code>, <code>Linux</code>, and
+                                                <code>Windows</code> (via WSL2).
                                             </p>
-                                            <h2 id="what-is-the-docker" tabindex="-1">What is the Docker? <a class="header-anchor"
-                                                    href="#what-is-the-docker" aria-label="Permalink to &quot;What is the Docker?&quot;">​</a></h2>
-                                            <p>Docker is a tool for running applications and services in small, light-weight "containers" which do not
-                                                interfere with your local computer's installed software or configuration. This means you don't have to
-                                                worry about configuring or setting up complicated development tools such as web servers and databases on
+                                            <h2 id="what-is-the-docker" tabindex="-1">What is the Docker? <a
+                                                    class="header-anchor" href="#what-is-the-docker"
+                                                    aria-label="Permalink to &quot;What is the Docker?&quot;">​</a></h2>
+                                            <p>Docker is a tool for running applications and services in small,
+                                                light-weight "containers" which do not
+                                                interfere with your local computer's installed software or
+                                                configuration. This means you don't have to
+                                                worry about configuring or setting up complicated development tools such
+                                                as web servers and databases on
                                                 your personal computer. To get started, you only need to install <a
-                                                    href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noreferrer">Docker
+                                                    href="https://www.docker.com/products/docker-desktop"
+                                                    target="_blank" rel="noreferrer">Docker
                                                     Desktop</a>.</p>
-                                            <h2 id="installation-setup" tabindex="-1">Installation &amp; Setup <a class="header-anchor"
-                                                    href="#installation-setup" aria-label="Permalink to &quot;Installation &amp; Setup&quot;">​</a></h2>
-                                            <p>Laravel Sail is automatically installed with all new Laravel applications so you may start using it
-                                                immediately. To learn how to create a new Laravel application, please consult Laravel's <a
-                                                    href="https://laravel.com/docs/10.x/installation" target="_blank" rel="noreferrer">installation
+                                            <h2 id="installation-setup" tabindex="-1">Installation &amp; Setup <a
+                                                    class="header-anchor" href="#installation-setup"
+                                                    aria-label="Permalink to &quot;Installation &amp; Setup&quot;">​</a>
+                                            </h2>
+                                            <p>Laravel Sail is automatically installed with all new Laravel applications
+                                                so you may start using it
+                                                immediately. To learn how to create a new Laravel application, please
+                                                consult Laravel's <a href="https://laravel.com/docs/10.x/installation"
+                                                    target="_blank" rel="noreferrer">installation
                                                     documentation</a> for your operating system.</p>
-                                            <h2 id="installing-sail-into-existing-applications" tabindex="-1">Installing Sail Into Existing Applications
-                                                <a class="header-anchor" href="#installing-sail-into-existing-applications"
-                                                    aria-label="Permalink to &quot;Installing Sail Into Existing Applications&quot;">​</a></h2>
-                                            <p>If you are interested in using Sail with an existing Laravel application, you may simply install Sail
-                                                using the Composer package manager. Of course, these steps assume that your existing local development
+                                            <h2 id="installing-sail-into-existing-applications" tabindex="-1">Installing
+                                                Sail Into Existing Applications
+                                                <a class="header-anchor"
+                                                    href="#installing-sail-into-existing-applications"
+                                                    aria-label="Permalink to &quot;Installing Sail Into Existing Applications&quot;">​</a>
+                                            </h2>
+                                            <p>If you are interested in using Sail with an existing Laravel application,
+                                                you may simply install Sail
+                                                using the Composer package manager. Of course, these steps assume that
+                                                your existing local development
                                                 environment allows you to install Composer dependencies:</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">composer</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> require</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> laravel/sail</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> --dev</span></span></code></pre>
                                             </div>
-                                            <p>After Sail has been installed, you may run the <code>sail:install</code> Artisan command. This command
-                                                will publish Sail's <code>docker-compose.yml</code> file to the root of your application:</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <p>After Sail has been installed, you may run the <code>sail:install</code>
+                                                Artisan command. This command
+                                                will publish Sail's <code>docker-compose.yml</code> file to the root of
+                                                your application:</p>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">php</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> artisan</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> sail:install</span></span></code></pre>
                                             </div>
-                                            <p>Finally, you may start Sail. To continue learning how to use Sail, please continue reading the remainder
+                                            <p>Finally, you may start Sail. To continue learning how to use Sail, please
+                                                continue reading the remainder
                                                 of this documentation:</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">./vendor/bin/sail</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> up</span></span></code></pre>
                                             </div>
-                                            <h2 id="configuring-a-bash-alias" tabindex="-1">Configuring A Bash Alias <a class="header-anchor"
-                                                    href="#configuring-a-bash-alias"
-                                                    aria-label="Permalink to &quot;Configuring A Bash Alias&quot;">​</a></h2>
-                                            <p>By default, Sail commands are invoked using the <code>vendor/bin/sail</code> script that is included with
+                                            <h2 id="configuring-a-bash-alias" tabindex="-1">Configuring A Bash Alias <a
+                                                    class="header-anchor" href="#configuring-a-bash-alias"
+                                                    aria-label="Permalink to &quot;Configuring A Bash Alias&quot;">​</a>
+                                            </h2>
+                                            <p>By default, Sail commands are invoked using the
+                                                <code>vendor/bin/sail</code> script that is included with
                                                 all new Laravel applications:</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">./vendor/bin/sail</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> up</span></span></code></pre>
                                             </div>
-                                            <p>However, instead of repeatedly typing <code>vendor/bin/sail</code> to execute Sail commands, you may wish
-                                                to configure a Bash alias that allows you to execute Sail's commands more easily:</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <p>However, instead of repeatedly typing <code>vendor/bin/sail</code> to
+                                                execute Sail commands, you may wish
+                                                to configure a Bash alias that allows you to execute Sail's commands
+                                                more easily:</p>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">alias</span><span style="--shiki-dark:#BD93F9;--shiki-light:#24292E;"> sail</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">[ -f sail ] &amp;&amp; sh sail || sh vendor/bin/sail</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span></span></code></pre>
                                             </div>
-                                            <p>Once the Bash alias has been configured, you may execute Sail commands by simply typing
-                                                <code>sail</code>. The remainder of this documentation's examples will assume that you have configured
-                                                this alias:</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <p>Once the Bash alias has been configured, you may execute Sail commands by
+                                                simply typing
+                                                <code>sail</code>. The remainder of this documentation's examples will
+                                                assume that you have configured
+                                                this alias:
+                                            </p>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sail</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> up</span></span></code></pre>
                                             </div>
-                                            <h2 id="starting-stopping-sail" tabindex="-1">Starting &amp; Stopping Sail <a class="header-anchor"
-                                                    href="#starting-stopping-sail"
-                                                    aria-label="Permalink to &quot;Starting &amp; Stopping Sail&quot;">​</a></h2>
-                                            <p>Laravel Sail's <code>docker-compose.yml</code> file defines a Docker variety of containers that work
-                                                together to help you build Laravel applications. Each of these containers is an entry within the
-                                                <code>services</code> configuration of your <code>docker-compose.yml</code> file. The
-                                                <code>laravel.test</code> container is the primary application container that will be serving your
-                                                application.</p>
-                                            <p>Before starting Sail, you should ensure that no other web servers or databases are running on your local
-                                                computer. To start all of the Docker containers defined in your application's
-                                                <code>docker-compose.yml</code> file, you should execute the <code>up</code> command:</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <h2 id="starting-stopping-sail" tabindex="-1">Starting &amp; Stopping Sail
+                                                <a class="header-anchor" href="#starting-stopping-sail"
+                                                    aria-label="Permalink to &quot;Starting &amp; Stopping Sail&quot;">​</a>
+                                            </h2>
+                                            <p>Laravel Sail's <code>docker-compose.yml</code> file defines a Docker
+                                                variety of containers that work
+                                                together to help you build Laravel applications. Each of these
+                                                containers is an entry within the
+                                                <code>services</code> configuration of your
+                                                <code>docker-compose.yml</code> file. The
+                                                <code>laravel.test</code> container is the primary application container
+                                                that will be serving your
+                                                application.
+                                            </p>
+                                            <p>Before starting Sail, you should ensure that no other web servers or
+                                                databases are running on your local
+                                                computer. To start all of the Docker containers defined in your
+                                                application's
+                                                <code>docker-compose.yml</code> file, you should execute the
+                                                <code>up</code> command:
+                                            </p>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sail</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> up</span></span></code></pre>
                                             </div>
-                                            <p>To start all of the Docker containers in the background, you may start Sail in "detached" mode:</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <p>To start all of the Docker containers in the background, you may start
+                                                Sail in "detached" mode:</p>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sail</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> up</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> -d</span></span></code></pre>
                                             </div>
-                                            <p>Once the application's containers have been started, you may access the project in your web browser at:
-                                                <a href="http://localhost" target="_blank" rel="noreferrer">http://localhost</a>.</p>
-                                            <p>To stop all of the containers, you may simply press Control + C to stop the container's execution. Or, if
-                                                the containers are running in the background, you may use the <code>down</code> command:</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <p>Once the application's containers have been started, you may access the
+                                                project in your web browser at:
+                                                <a href="http://localhost" target="_blank"
+                                                    rel="noreferrer">http://localhost</a>.
+                                            </p>
+                                            <p>To stop all of the containers, you may simply press Control + C to stop
+                                                the container's execution. Or, if
+                                                the containers are running in the background, you may use the
+                                                <code>down</code> command:</p>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sail</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> stop</span></span></code></pre>
                                             </div>
-                                            <h2 id="how-to-run-the-vuexy-template-with-docker" tabindex="-1">How to run the Vuexy template with docker?
-                                                <a class="header-anchor" href="#how-to-run-the-vuexy-template-with-docker"
-                                                    aria-label="Permalink to &quot;How to run the Vuexy template with docker?&quot;">​</a></h2>
-                                            <p>You can run our template in docker environment using sail. After, successfully installed <a
-                                                    href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noreferrer">docker</a> in
-                                                your system run the below command to install sail and composer modules in the template.</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <h2 id="how-to-run-the-vuexy-template-with-docker" tabindex="-1">How to run
+                                                the Vuexy template with docker?
+                                                <a class="header-anchor"
+                                                    href="#how-to-run-the-vuexy-template-with-docker"
+                                                    aria-label="Permalink to &quot;How to run the Vuexy template with docker?&quot;">​</a>
+                                            </h2>
+                                            <p>You can run our template in docker environment using sail. After,
+                                                successfully installed <a
+                                                    href="https://www.docker.com/products/docker-desktop"
+                                                    target="_blank" rel="noreferrer">docker</a> in
+                                                your system run the below command to install sail and composer modules
+                                                in the template.</p>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">docker</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> run</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> --rm</span><span style="--shiki-dark:#FF79C6;--shiki-light:#005CC5;"> \</span></span>
                                 <span class="line"><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;">    -u</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;"> "</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">$(</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">id</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> -u</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">):$(</span><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">id</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> -g</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">)</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">"</span><span style="--shiki-dark:#FF79C6;--shiki-light:#005CC5;"> \</span></span>
@@ -878,33 +933,39 @@
                                 <span class="line"><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">    composer</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> install</span><span style="--shiki-dark:#BD93F9;--shiki-light:#005CC5;"> --ignore-platform-reqs</span></span></code></pre>
                                             </div>
                                             <p>Now, run the below command to start the sail.</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">alias</span><span style="--shiki-dark:#BD93F9;--shiki-light:#24292E;"> sail</span><span style="--shiki-dark:#FF79C6;--shiki-light:#D73A49;">=</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;">[ -f sail ] &amp;&amp; sh sail || sh vendor/bin/sail</span><span style="--shiki-dark:#E9F284;--shiki-light:#032F62;">'</span><span style="--shiki-dark:#F8F8F2;--shiki-light:#24292E;">  //created alias</span></span>
                                 <span class="line"></span>
                                 <span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sail</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> up</span></span></code></pre>
                                             </div>
-                                            <p>In the root directory, you will find a file named <code>.env.example</code>, rename the given file name
-                                                to <code>.env</code> and run the following command to generate the key (and you can also edit your
+                                            <p>In the root directory, you will find a file named
+                                                <code>.env.example</code>, rename the given file name
+                                                to <code>.env</code> and run the following command to generate the key
+                                                (and you can also edit your
                                                 database credentials here).</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sail</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> php</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> artisan</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> key:generate</span></span></code></pre>
                                             </div>
-                                            <p>By running the following command, you will be able to get all the dependencies in your
-                                                <code>node_modules</code> folder:</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <p>By running the following command, you will be able to get all the
+                                                dependencies in your
+                                                <code>node_modules</code> folder:
+                                            </p>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sail</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> yarn</span></span></code></pre>
                                             </div>
-                                            <p>To run the project in development mode , you need to run following command in the project directory. It
-                                                will compile the php files &amp; all the other project files. It will also enable hot module
+                                            <p>To run the project in development mode , you need to run following
+                                                command in the project directory. It
+                                                will compile the php files &amp; all the other project files. It will
+                                                also enable hot module
                                                 replacement.</p>
-                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span
-                                                    class="lang">sh</span>
+                                            <div class="language-sh vp-adaptive-theme"><button title="Copy Code"
+                                                    class="copy"></button><span class="lang">sh</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
                                                     tabindex="0"><code><span class="line"><span style="--shiki-dark:#50FA7B;--shiki-light:#6F42C1;">sail</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> yarn</span><span style="--shiki-dark:#F1FA8C;--shiki-light:#032F62;"> dev</span></span></code></pre>
                                             </div>
@@ -918,10 +979,9 @@
                                         <span data-v-0e0099f1="" class="visually-hidden"
                                             id="doc-footer-aria-label">Pager</span>
                                         <div data-v-0e0099f1="" class="pager"><a data-v-0e0099f1=""
-                                                class="VPLink link pager-link prev"
-                                                href=><span
-                                                    data-v-0e0099f1="" class="desc">Previous page</span><span
-                                                    data-v-0e0099f1="" class="title">Video Tutorials</span></a></div>
+                                                class="VPLink link pager-link prev" href=><span data-v-0e0099f1=""
+                                                    class="desc">Previous page</span><span data-v-0e0099f1=""
+                                                    class="title">Video Tutorials</span></a></div>
                                         <div data-v-0e0099f1="" class="pager"><a data-v-0e0099f1=""
                                                 class="VPLink link pager-link next" href="Vscode _ doc.html"><span
                                                     data-v-0e0099f1="" class="desc">Next page</span><span
@@ -944,6 +1004,7 @@
 
 
     <script type="text/javascript" id="" charset="">console.log("PI:GTM Worked!");</script>
+    <script src="doc_files/themeSwither.js"> </script>
 </body>
 
 </html>
