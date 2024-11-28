@@ -16,3 +16,9 @@ function switchTheme2() {
     }
 
 }
+
+
+function switchThemetoggle() {
+    var themeSwicher = document.getElementById("theme");
+    themeSwicher.classList.toggle("light")
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0092)https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/installation.html -->
-<html lang="en-US" dir="ltr" class="dark">
+<html lang="en-US" dir="ltr" class="dark" id="theme">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -78,6 +78,9 @@
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_getting-started_data-fetching.md.DmRHMg1u.js">
     <link rel="prefetch"
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_authentication.md.rh304ixc.js">
+    <link rel="stylesheet" href="doc_files/test.css">
+    <link rel="stylesheet" href="doc_files/themeSwitcher.css">
+
 </head>
 
 <body>
@@ -118,7 +121,17 @@
                                         </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink active" href=""
                                             tabindex="0" data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
                                                 data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--]--><!--[-->
+                                        <div class="toggle">
+                                            <input type="checkbox" id="btn">
+                                            <label for="btn" onclick="switchThemetoggle()">
+                                                <span class="track">
+                                                    <span class="txt"></span>
+                                                </span>
+                                                <span class="thumb">|||</span>
+                                            </label>
+                                        </div>
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
+
 
                                             <div class="menu" data-v-77cf94f3="">
                                                 <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
@@ -158,55 +171,51 @@
                                         </div><!--]--><!--[--><!--]--><!--]-->
                                     </nav><!---->
                                     <div class="VPNavBarAppearance appearance" data-v-ea10065c="" data-v-c44248a2="">
-                                        <button class="VPSwitch VPSwitchAppearance" type="button" role="switch"
-                                            title="Switch to light theme" aria-checked="false" data-v-c44248a2=""
-                                            data-v-de588eec="" data-v-77375079=""><span class="check"
-                                                data-v-77375079=""><span class="icon" data-v-77375079=""><!--[--><span
-                                                        class="vpi-sun sun" data-v-de588eec=""></span><span
-                                                        class="vpi-moon moon"
-                                                        data-v-de588eec=""></span><!--]--></span></span></button>
-                                    </div>
-                                    <!---->
-                                    <div class="VPFlyout VPNavBarExtra extra" data-v-ea10065c="" data-v-a614bd68=""
-                                        data-v-77cf94f3=""><button type="button" class="button" aria-haspopup="true"
-                                            aria-expanded="false" aria-label="extra navigation" data-v-77cf94f3=""><span
-                                                class="vpi-more-horizontal icon" data-v-77cf94f3=""></span></button>
-                                        <div class="menu" data-v-77cf94f3="">
-                                            <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
-                                                <!----><!--[--><!--[--><!---->
-                                                <div class="group" data-v-a614bd68="">
-                                                    <div class="item appearance" data-v-a614bd68="">
-                                                        <p class="label" data-v-a614bd68="">Appearance</p>
-                                                        <div class="appearance-action" data-v-a614bd68=""><button
-                                                                class="VPSwitch VPSwitchAppearance" type="button"
-                                                                role="switch" title="Switch to light theme"
-                                                                aria-checked="false" data-v-a614bd68=""
-                                                                data-v-de588eec="" data-v-77375079=""><span
-                                                                    class="check" data-v-77375079=""><span class="icon"
-                                                                        data-v-77375079=""><!--[--><span
-                                                                            class="vpi-sun sun"
-                                                                            data-v-de588eec=""></span><span
-                                                                            class="vpi-moon moon"
-                                                                            data-v-de588eec=""></span><!--]--></span></span></button>
+
+                                        <!---->
+                                        <div class="VPFlyout VPNavBarExtra extra" data-v-ea10065c="" data-v-a614bd68=""
+                                            data-v-77cf94f3=""><button type="button" class="button" aria-haspopup="true"
+                                                aria-expanded="false" aria-label="extra navigation"
+                                                data-v-77cf94f3=""><span class="vpi-more-horizontal icon"
+                                                    data-v-77cf94f3=""></span></button>
+                                            <div class="menu" data-v-77cf94f3="">
+                                                <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
+                                                    <!----><!--[--><!--[--><!---->
+                                                    <div class="group" data-v-a614bd68="">
+                                                        <div class="item appearance" data-v-a614bd68="">
+                                                            <p class="label" data-v-a614bd68="">Appearance</p>
+                                                            <div class="appearance-action" data-v-a614bd68=""><button
+                                                                    class="VPSwitch VPSwitchAppearance" type="button"
+                                                                    role="switch" title="Switch to light theme"
+                                                                    aria-checked="false" data-v-a614bd68=""
+                                                                    data-v-de588eec="" data-v-77375079=""><span
+                                                                        class="check" data-v-77375079=""><span
+                                                                            class="icon"
+                                                                            data-v-77375079=""><!--[--><span
+                                                                                class="vpi-sun sun"
+                                                                                data-v-de588eec=""></span><span
+                                                                                class="vpi-moon moon"
+                                                                                data-v-de588eec=""></span><!--]--></span></span></button>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </div><!----><!--]--><!--]-->
+                                                    </div><!----><!--]--><!--]-->
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger"
-                                        aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen"
-                                        data-v-ea10065c="" data-v-6a6bf4b1=""><span class="container"
-                                            data-v-6a6bf4b1=""><span class="top" data-v-6a6bf4b1=""></span><span
-                                                class="middle" data-v-6a6bf4b1=""></span><span class="bottom"
-                                                data-v-6a6bf4b1=""></span></span></button>
+                                        </div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger"
+                                            aria-label="mobile navigation" aria-expanded="false"
+                                            aria-controls="VPNavScreen" data-v-ea10065c="" data-v-6a6bf4b1=""><span
+                                                class="container" data-v-6a6bf4b1=""><span class="top"
+                                                    data-v-6a6bf4b1=""></span><span class="middle"
+                                                    data-v-6a6bf4b1=""></span><span class="bottom"
+                                                    data-v-6a6bf4b1=""></span></span></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="divider" data-v-ea10065c="">
-                        <div class="divider-line" data-v-ea10065c=""></div>
-                    </div>
-                </div><!---->
+                        <div class="divider" data-v-ea10065c="">
+                            <div class="divider-line" data-v-ea10065c=""></div>
+                        </div>
+                    </div><!---->
             </header>
             <div data-v-4aa410e9="" data-v-2c31d08e="" class="VPLocalNav has-sidebar">
                 <div data-v-4aa410e9="" class="container"><button data-v-4aa410e9="" class="menu" aria-expanded="false"

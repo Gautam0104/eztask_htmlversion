@@ -21,7 +21,7 @@
     <meta name="description" content="Production Ready, Carefully Crafted, Extensive Vuetify Admin Template">
     <meta name="generator" content="VitePress v1.3.1">
     <link rel="preload stylesheet" href="doc_files/test.css" as="style">
-
+    <link rel="stylesheet" href="doc_files/themeSwitcher.css">
     <script type="module" src="./Installation _ doc_files/app.DkM2pYB_.js.download"></script>
     <link rel="preload"
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/inter-roman-latin.Di8DUHzh.woff2"
@@ -70,6 +70,20 @@
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_getting-started_data-fetching.md.DmRHMg1u.js">
     <link rel="prefetch"
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_authentication.md.rh304ixc.js">
+        <link rel="stylesheet" href="doc_files/test.css">
+        <link rel="stylesheet" href="doc_files/themeSwitcher.css">
+
+    <style>
+        .toggle.ios,
+        .toggle-on.ios,
+        .toggle-off.ios {
+            border-radius: 20rem;
+        }
+
+        .toggle.ios .toggle-handle {
+            border-radius: 20rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -112,11 +126,19 @@
                                                 data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--]--><!--[-->
 
 
-                                        <button class="VPSwitch VPSwitchAppearance me-2" onclick="switchTheme()">
-                                            Light |</button>
 
-                                        <button class="VPSwitch VPSwitchAppearance mx-3" onclick="switchTheme2()">
-                                            | Dark</button>
+
+                                        <div class="toggle">
+                                            <input type="checkbox" id="btn">
+                                            <label for="btn" onclick="switchThemetoggle()">
+                                                <span class="track">
+                                                    <span class="txt"></span>
+                                                </span>
+                                                <span class="thumb">|||</span>
+                                            </label>
+                                        </div>
+
+                                        <input type="checkbox" checked data-toggle="toggle" data-style="ios">
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
 
                                             <div class="menu" data-v-77cf94f3="">
@@ -159,13 +181,7 @@
 
                                     </nav><!---->
                                     <div class="VPNavBarAppearance appearance" data-v-ea10065c="" data-v-c44248a2="">
-                                        <button class="VPSwitch VPSwitchAppearance" type="button" role="switch"
-                                            title="Switch to light theme" aria-checked="false" data-v-c44248a2=""
-                                            data-v-de588eec="" data-v-77375079=""><span class="check"
-                                                data-v-77375079=""><span class="icon" data-v-77375079=""><!--[--><span
-                                                        class="vpi-sun sun" data-v-de588eec=""></span><span
-                                                        class="vpi-moon moon"
-                                                        data-v-de588eec=""></span><!--]--></span></span></button>
+
                                     </div>
                                     <!---->
                                     <div class="VPFlyout VPNavBarExtra extra" data-v-ea10065c="" data-v-a614bd68=""

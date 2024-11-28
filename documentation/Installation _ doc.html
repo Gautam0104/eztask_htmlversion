@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0092)https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/installation.html -->
-<html lang="en-US" dir="ltr" class="light">
+<html lang="en-US" dir="ltr" class="light" id="theme">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -119,6 +119,9 @@
 
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
+
+    <link rel="stylesheet" href="doc_files/test.css">
+    <link rel="stylesheet" href="doc_files/themeSwitcher.css">
 </head>
 
 <body>
@@ -159,7 +162,15 @@
                                         </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink active" href=""
                                             tabindex="0" data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
                                                 data-v-ae9b85a5="">Guide</span><!--]--></a>
-
+                                        <div class="toggle">
+                                            <input type="checkbox" id="btn">
+                                            <label for="btn" onclick="switchThemetoggle()">
+                                                <span class="track">
+                                                    <span class="txt"></span>
+                                                </span>
+                                                <span class="thumb">|||</span>
+                                            </label>
+                                        </div>
                                         <!--]--><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
 
@@ -205,7 +216,7 @@
                                             href="javascript:void(0);" data-bs-toggle="dropdown">
                                             <i class="ti ti-md"></i>
                                         </a>
-                                        <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                                        <!-- <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
                                             <li>
                                                 <a class="dropdown-item" href="javascript:void(0);" data-theme="light">
                                                     <span class="align-middle"><i
@@ -224,16 +235,10 @@
                                                             class="ti ti-device-desktop-analytics ti-md me-3"></i>System</span>
                                                 </a>
                                             </li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <div class="VPNavBarAppearance appearance" data-v-ea10065c="" data-v-c44248a2="">
-                                        <button class="VPSwitch VPSwitchAppearance" type="button" role="switch"
-                                            title="Switch to light theme" aria-checked="false" data-v-c44248a2=""
-                                            data-v-de588eec="" data-v-77375079=""><span class="check"
-                                                data-v-77375079=""><span class="icon" data-v-77375079=""><!--[--><span
-                                                        class="vpi-sun sun" data-v-de588eec=""></span><span
-                                                        class="vpi-moon moon"
-                                                        data-v-de588eec=""></span><!--]--></span></span></button>
+
                                     </div>
                                     <!---->
                                     <div class="VPFlyout VPNavBarExtra extra" data-v-ea10065c="" data-v-a614bd68=""
@@ -963,8 +968,7 @@
                                                         Terminal Warning</a></li>
                                             </ul>
                                             <h2 id="generating-build-for-production" tabindex="-1">Generating build for
-                                                production <a class="header-anchor"
-                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/installation.html#generating-build-for-production"
+                                                production <a class="header-anchor" href=""
                                                     aria-label="Permalink to &quot;Generating build for production&quot;">​</a>
                                             </h2>
                                             <ol>
@@ -1066,9 +1070,9 @@
                                         <span data-v-0e0099f1="" class="visually-hidden"
                                             id="doc-footer-aria-label">Pager</span>
                                         <div data-v-0e0099f1="" class="pager"><a data-v-0e0099f1=""
-                                                class="VPLink link pager-link prev" href=""><span data-v-0e0099f1=""
-                                                    class="desc">Previous page</span><span data-v-0e0099f1=""
-                                                    class="title">Video Tutorials</span></a></div>
+                                                class="VPLink link pager-link prev" href="video _ doc.html"><span
+                                                    data-v-0e0099f1="" class="desc">Previous page</span><span
+                                                    data-v-0e0099f1="" class="title">Video Tutorials</span></a></div>
                                         <div data-v-0e0099f1="" class="pager"><a data-v-0e0099f1=""
                                                 class="VPLink link pager-link next" href="Vscode _ doc.html"><span
                                                     data-v-0e0099f1="" class="desc">Next page</span><span
@@ -1118,6 +1122,7 @@
 
     <script src="doc_files/app.DkM2pYB_.js"></script>
     <script src="doc_files/gtm.js"></script>
+    <script src="doc_files/themeSwither.js"> </script>
     <script src="doc_files/themeSwither.js"> </script>
 </body>
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0092)https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/installation.html -->
-<html lang="en-US" dir="ltr" class="dark" id="theme">
+<html lang="en-US" dir="ltr" class="dark">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -17,7 +17,7 @@
     <!-- End Google Tag Manager -->
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Vscode | Thunderbees</title>
+    <title>Navbar Notification | Thunderbees</title>
     <meta name="description" content="Production Ready, Carefully Crafted, Extensive Vuetify Admin Template">
     <meta name="generator" content="VitePress v1.3.1">
     <link rel="preload stylesheet"
@@ -78,9 +78,6 @@
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_getting-started_data-fetching.md.DmRHMg1u.js">
     <link rel="prefetch"
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_authentication.md.rh304ixc.js">
-
-    <link rel="stylesheet" href="doc_files/test.css">
-    <link rel="stylesheet" href="doc_files/themeSwitcher.css">
 </head>
 
 <body>
@@ -121,16 +118,6 @@
                                         </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink active" href=""
                                             tabindex="0" data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
                                                 data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--]--><!--[-->
-                                        <div class="toggle">
-                                            <input type="checkbox" id="btn">
-                                            <label for="btn" onclick="switchThemetoggle()">
-                                                <span class="track">
-                                                    <span class="txt"></span>
-                                                </span>
-                                                <span class="thumb">|||</span>
-                                            </label>
-                                        </div>
-
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
 
                                             <div class="menu" data-v-77cf94f3="">
@@ -171,7 +158,13 @@
                                         </div><!--]--><!--[--><!--]--><!--]-->
                                     </nav><!---->
                                     <div class="VPNavBarAppearance appearance" data-v-ea10065c="" data-v-c44248a2="">
-
+                                        <button class="VPSwitch VPSwitchAppearance" type="button" role="switch"
+                                            title="Switch to light theme" aria-checked="false" data-v-c44248a2=""
+                                            data-v-de588eec="" data-v-77375079=""><span class="check"
+                                                data-v-77375079=""><span class="icon" data-v-77375079=""><!--[--><span
+                                                        class="vpi-sun sun" data-v-de588eec=""></span><span
+                                                        class="vpi-moon moon"
+                                                        data-v-de588eec=""></span><!--]--></span></span></button>
                                     </div>
                                     <!---->
                                     <div class="VPFlyout VPNavBarExtra extra" data-v-ea10065c="" data-v-a614bd68=""
@@ -757,95 +750,40 @@
                             <div data-v-f617e204="" class="content-container">
                                 <main data-v-f617e204="" class="main">
                                     <div data-v-f617e204=""
-                                        class="vp-doc _vuexy-vuejs-admin-template_documentation_guide_vscode-setup"
+                                        class="vp-doc _vuexy-vuejs-admin-template_documentation_guide_video-tutorials"
                                         style="position: relative;">
                                         <div>
-                                            <h1 id="vs-code-setup" tabindex="-1">VS Code setup <a class="header-anchor"
-                                                    href="Vscode _ doc.html#vs-code-setup"
-                                                    aria-label="Permalink to &quot;VS Code setup&quot;">​</a></h1>
-                                            <h2 id="recommended-extensions" tabindex="-1">Recommended Extensions <a
-                                                    class="header-anchor"
-                                                    href="Vscode _ doc.html#recommended-extensions"
-                                                    aria-label="Permalink to &quot;Recommended Extensions&quot;">​</a>
-                                            </h2>
-                                            <p>Open extensions and search for <code>@recommended</code></p>
-                                            <p><img src="./doc_files/vscode-recommended-extensions.png"
-                                                    alt="vscode-recommended-extensions"></p>
-                                            <p>Install and enable all the recommended extensions. Read more about
-                                                workspace recommended
-                                                extensions in VS Code official <a
-                                                    href="https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions"
-                                                    target="_blank" rel="noreferrer">docs</a>.</p>
-                                            <p><a href="https://marketplace.visualstudio.com/items?itemName=Vue.volar"
-                                                    target="_blank" rel="noreferrer">Vue - Official</a> (Previously
-                                                Volar) is the official VSCode extension that
-                                                provides TypeScript support inside Vue SFCs, along with many other great
-                                                features.</p>
-                                            <h2 id="comment-anchors-extension" tabindex="-1">Comment Anchors Extension
-                                                <a class="header-anchor"
-                                                    href="Vscode _ doc.html#comment-anchors-extension"
-                                                    aria-label="Permalink to &quot;Comment Anchors Extension&quot;">​</a>
-                                            </h2>
-                                            <h3 id="settings" tabindex="-1">Settings <a class="header-anchor"
-                                                    href="Vscode _ doc.html#settings"
-                                                    aria-label="Permalink to &quot;Settings&quot;">​</a></h3>
-                                            <p>We use <a
-                                                    href="https://marketplace.visualstudio.com/items?itemName=ExodiusStudios.comment-anchors"
-                                                    target="_blank" rel="noreferrer">Comment Anchors</a> extension for
-                                                quick navigation within a
-                                                file. We have provided our own extension settings for providing anchors
-                                                in the file. You can
-                                                refer to these settings in <code>.vscode/settings.json</code> file.</p>
-                                            <h3 id="snippet" tabindex="-1">Snippet <a class="header-anchor"
-                                                    href="Vscode _ doc.html#snippet"
-                                                    aria-label="Permalink to &quot;Snippet&quot;">​</a></h3>
-                                            <p>We also provided the snippet for adding the comment anchors. You can find
-                                                this snippets in
-                                                <code>.vscode/comment-anchors.code-snippets</code> file.
-                                            </p>
-                                            <p>We use "👉" for adding anchors to the code. You can get this emoji by
-                                                writing <code>cm-</code>
-                                                (press <code>ctrl</code>/<code>cmd</code> + <code>space</code> if popup
-                                                doesn't open) and
-                                                choosing <code>cm-hand-emoji</code> snippet.</p>
-                                            <p><img src="./doc_files/vscode-comment-anchors-snippets.png"
-                                                    alt="vscode-comment-anchors-snippets"></p>
-                                            <h2 id="secondary-sidebar-🦸" tabindex="-1">Secondary Sidebar 🦸 <a
-                                                    class="header-anchor"
-                                                    href="Vscode _ doc.html#secondary-sidebar-%F0%9F%A6%B8"
-                                                    aria-label="Permalink to &quot;Secondary Sidebar 🦸&quot;">​</a>
-                                            </h2>
-                                            <p>Secondary sidebar is game changer for code navigation when combined with
-                                                this extension. Press
-                                                <code>ctrl</code>/<code>cmd</code> + <code>shift</code> + <code>p</code>
-                                                and search for
-                                                secondary sidebar.
-                                            </p>
-                                            <p><img src="./doc_files/vscode-enable-secondary-sidebar.png"
-                                                    alt="vscode-enable-secondary-sidebar"></p>
-                                            <p>After this you will get the new sidebar on the right. Now drag the
-                                                comment anchors extension
-                                                panel from left sidebar to right sidebar.</p>
-                                            <p>With above changes now you code editor will look like below. Notice, main
-                                                sidebar on left and
-                                                secondary sidebar with comment anchors on right for in file code
-                                                navigation.</p>
-                                            <p><img src="./doc_files/vscode-secondary-sidebar-preview.png"
-                                                    alt="vscode-secondary-sidebar-preview"></p>
-                                            <p>Once, you have the file with the comments anchor setup you will get the
-                                                list of anchors in
-                                                secondary sidebar that is placed on right.</p>
-                                            <p><a
-                                                    href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/images/guide/vscode-comment-anchor-demo.gif">vscode-comment-anchor-demo</a>
-                                            </p>
-                                            <h2 id="snippets" tabindex="-1">Snippets <a class="header-anchor"
-                                                    href="Vscode _ doc.html#snippets"
-                                                    aria-label="Permalink to &quot;Snippets&quot;">​</a></h2>
-                                            <p>We also provide useful snippets for boosting your productivity. You can
-                                                find them in
-                                                <code>.vscode/</code> directory. Files ending with
-                                                <code>.code-snippets</code> are snippets.
-                                            </p>
+                                            <h1 id="video-tutorials" tabindex="-1">Video Tutorials <a
+                                                    class="header-anchor" href="#video-tutorials"
+                                                    aria-label="Permalink to &quot;Video Tutorials&quot;">​</a></h1>
+                                            <h2 id="vuejs-folder-structure" tabindex="-1">Vuejs Folder Structure <a
+                                                    class="header-anchor" href="#vuejs-folder-structure"
+                                                    aria-label="Permalink to &quot;Vuejs Folder Structure&quot;">​</a>
+                                            </h2><iframe width="100%" height="360"
+                                                src="https://www.youtube.com/embed/_mODYgaUFeo?si=v2sfbyRHewa3lKkA"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen=""></iframe>
+                                            <h2 id="nuxtjs-folder-structure" tabindex="-1">Nuxtjs Folder Structure <a
+                                                    class="header-anchor" href="#nuxtjs-folder-structure"
+                                                    aria-label="Permalink to &quot;Nuxtjs Folder Structure&quot;">​</a>
+                                            </h2><iframe width="100%" height="360"
+                                                src="https://www.youtube.com/embed/YLQjRudDNic?si=14fwLZgGS2ZBHt4R"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen=""></iframe>
+                                            <h2 id="vuejs-laravel-folder-structure" tabindex="-1">Vuejs Laravel Folder
+                                                Structure <a class="header-anchor"
+                                                    href="#vuejs-laravel-folder-structure"
+                                                    aria-label="Permalink to &quot;Vuejs Laravel Folder Structure&quot;">​</a>
+                                            </h2><iframe width="100%" height="360"
+                                                src="https://www.youtube.com/embed/B_TTEBkA73Q?si=1oCqyigdbCmkIS78"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen=""></iframe>
                                         </div>
                                     </div>
                                 </main>
@@ -879,7 +817,6 @@
 
 
     <script type="text/javascript" id="" charset="">console.log("PI:GTM Worked!");</script>
-    <script src="doc_files/themeSwither.js"> </script>
 </body>
 
 </html>
