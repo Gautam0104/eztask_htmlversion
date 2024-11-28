@@ -1,7 +1,7 @@
 
 
 :root {
-    --sz: 2.5vmin;  /* size */
+    --sz: 1.5vmin;  /* size */
     --on: #e3eef0; /* color on  */
     --of: #191b1b; /* color off */
     --tr: all 0.25s ease 0s;
