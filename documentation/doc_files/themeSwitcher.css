@@ -1,7 +1,8 @@
 
 
 :root {
-    --sz: 1.5vmin;  /* size */
+    --sz: 2.5vmin;  /* size */
+    --szs: 1.5vmin;  /* size */
     --on: #e3eef0; /* color on  */
     --of: #191b1b; /* color off */
     --tr: all 0.25s ease 0s;
@@ -12,18 +13,36 @@
     transition: var(--tr) url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
     
     }
+
+    @media only screen and (max-width: 1280px) {
+      .toggle {
+        position: relative;
+        width: calc(var(--sz) * 4);
+        height: calc(var(--sz) * 2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 17px;
+        }
     
-    
-    
-    .toggle {
-    position: relative;
-    width: calc(var(--sz) * 4);
-    height: calc(var(--sz) * 2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 17px;
     }
+    @media only screen and (min-width: 1281px) {
+      .toggle {
+        position: relative;
+        width: calc(var(--szs) * 4);
+        height: calc(var(--szs) * 2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 17px;
+        margin-left: 15px;
+        }
+    
+    }
+    
+
+
+    
     
     input {
     display: none;
