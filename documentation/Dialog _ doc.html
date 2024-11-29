@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0092)https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/guide/installation.html -->
-<html lang="en-US" dir="ltr" class="dark">
+<html lang="en-US" dir="ltr" class="dark" id="theme">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -78,6 +78,9 @@
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_getting-started_data-fetching.md.DmRHMg1u.js">
     <link rel="prefetch"
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_authentication.md.rh304ixc.js">
+        <link rel="stylesheet" href="doc_files/test.css">
+        <link rel="stylesheet" href="doc_files/themeSwitcher.css">
+
 </head>
 
 <body>
@@ -118,6 +121,15 @@
                                         </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink active" href=""
                                             tabindex="0" data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
                                                 data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--]--><!--[-->
+                                                <div class="toggle">
+                                                    <input type="checkbox" id="btn">
+                                                    <label for="btn" onclick="switchThemetoggle()">
+                                                        <span class="track">
+                                                            <span class="txt"></span>
+                                                        </span>
+                                                        <span class="thumb">|||</span>
+                                                    </label>
+                                                </div>
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
 
                                             <div class="menu" data-v-77cf94f3="">
@@ -158,13 +170,7 @@
                                         </div><!--]--><!--[--><!--]--><!--]-->
                                     </nav><!---->
                                     <div class="VPNavBarAppearance appearance" data-v-ea10065c="" data-v-c44248a2="">
-                                        <button class="VPSwitch VPSwitchAppearance" type="button" role="switch"
-                                            title="Switch to light theme" aria-checked="false" data-v-c44248a2=""
-                                            data-v-de588eec="" data-v-77375079=""><span class="check"
-                                                data-v-77375079=""><span class="icon" data-v-77375079=""><!--[--><span
-                                                        class="vpi-sun sun" data-v-de588eec=""></span><span
-                                                        class="vpi-moon moon"
-                                                        data-v-de588eec=""></span><!--]--></span></span></button>
+                                        
                                     </div>
                                     <!---->
                                     <div class="VPFlyout VPNavBarExtra extra" data-v-ea10065c="" data-v-a614bd68=""
@@ -238,8 +244,8 @@
                                 </div>
                                 <div data-v-77984d35="" class="VPSidebarItem level-1 is-link">
                                     <div data-v-77984d35="" class="item">
-                                        <div data-v-77984d35="" class="indicator"></div> <a data-v-77984d35=""
-                                            class="VPLink link link" href="video _ doc.html">
+                                        <div data-v-77984d35="" class="indicator"></div><a data-v-77984d35=""
+                                            class="VPLink link link" href="">
                                             <p data-v-77984d35="" class="text">Video Tutorials</p>
                                         </a><!---->
                                     </div><!---->
@@ -833,6 +839,7 @@
 
     <script type="text/javascript" id="" charset="">console.log("PI:GTM Worked!");</script>
     <script src="doc_files/themeSwither.js"> </script>
+
 </body>
 
 </html>
