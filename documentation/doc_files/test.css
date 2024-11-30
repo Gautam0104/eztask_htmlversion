@@ -5023,18 +5023,18 @@ svg.DocSearch-Hit-Select-Icon {
     width: 100%;
     background-color: var(--vp-nav-screen-bg-color);
     overflow-y: auto;
-    transition: background-color .25s;
+    transition: background-color 1s;
     pointer-events: auto
 }
 
 .VPNavScreen.fade-enter-active[data-v-d8dd54e8],
 .VPNavScreen.fade-leave-active[data-v-d8dd54e8] {
-    transition: opacity .25s
+    transition: opacity 1s
 }
 
 .VPNavScreen.fade-enter-active .container[data-v-d8dd54e8],
 .VPNavScreen.fade-leave-active .container[data-v-d8dd54e8] {
-    transition: transform .25s ease
+    transition: transform 1s ease
 }
 
 .VPNavScreen.fade-enter-from[data-v-d8dd54e8],
@@ -6143,4 +6143,18 @@ samp {
 
 svg[data-v-9279e8cc] {
     flex: none
+}
+
+
+.VPNavScreenhide{
+    display: none;
+    transition: background-color 1s;
+}
+.VPNavScreenshow{
+    display: block;
+    transition: background-color 1s;
+}
+
+#VPNavScreen{
+    transition: 1s ease-in;
 }

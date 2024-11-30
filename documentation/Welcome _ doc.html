@@ -78,12 +78,12 @@
   <link rel="prefetch"
     href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/guide_authentication.md.rh304ixc.js">
 
-    <link rel="stylesheet" href="doc_files/test.css">
-    <link rel="stylesheet" href="doc_files/themeSwitcher.css">
-    
+  <link rel="stylesheet" href="doc_files/test.css">
+  <link rel="stylesheet" href="doc_files/themeSwitcher.css">
+
 </head>
 
-<body>
+<body style="overflow: hidden;">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J3LMKC" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -93,7 +93,7 @@
         href="Welcome _ doc.html" class="VPSkipLink visually-hidden" data-v-b79a9377=""> Skip to content
       </a><!--]--><!---->
       <header class="VPNav" data-v-2c31d08e="" data-v-2a5f9854="">
-        <div class="VPNavBar has-sidebar top" data-v-2a5f9854="" data-v-ea10065c="">
+        <div class="VPNavBar has-sidebar top screen-open" data-v-2a5f9854="" data-v-ea10065c="">
           <div class="wrapper" data-v-ea10065c="">
             <div class="container" data-v-ea10065c="">
               <div class="title" data-v-ea10065c="">
@@ -119,15 +119,15 @@
                     </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink active" href="" tabindex="0"
                       data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
                         data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--]--><!--[-->
-                        <div class="toggle">
-                          <input type="checkbox" id="btn">
-                          <label for="btn" onclick="switchThemetoggle()">
-                              <span class="track">
-                                  <span class="txt"></span>
-                              </span>
-                              <span class="thumb">|||</span>
-                          </label>
-                      </div>
+                    <div class="toggle">
+                      <input type="checkbox" id="btn">
+                      <label for="btn" onclick="switchThemetoggle()">
+                        <span class="track">
+                          <span class="txt"></span>
+                        </span>
+                        <span class="thumb">|||</span>
+                      </label>
+                    </div>
                     <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
 
                       <div class="menu" data-v-77cf94f3="">
@@ -164,7 +164,7 @@
                     </div><!--]--><!--[--><!--]--><!--]-->
                   </nav><!---->
                   <div class="VPNavBarAppearance appearance" data-v-ea10065c="" data-v-c44248a2="">
-                    
+
                   </div>
                   <!---->
                   <div class="VPFlyout VPNavBarExtra extra" data-v-ea10065c="" data-v-a614bd68="" data-v-77cf94f3="">
@@ -188,17 +188,32 @@
                         </div><!----><!--]--><!--]-->
                       </div>
                     </div>
-                  </div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger"
-                    aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-ea10065c=""
-                    data-v-6a6bf4b1=""><span class="container" data-v-6a6bf4b1=""><span class="top"
-                        data-v-6a6bf4b1=""></span><span class="middle" data-v-6a6bf4b1=""></span><span class="bottom"
-                        data-v-6a6bf4b1=""></span></span></button>
+                  </div><!--[--><!--]--><button type="button" onclick="vpMenuSwitch()"
+                    class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false"
+                    aria-controls="VPNavScreen" data-v-ea10065c="" data-v-6a6bf4b1=""><span class="container"
+                      data-v-6a6bf4b1=""><span class="top" data-v-6a6bf4b1=""></span><span class="middle"
+                        data-v-6a6bf4b1=""></span><span class="bottom" data-v-6a6bf4b1=""></span></span></button>
                 </div>
               </div>
             </div>
           </div>
           <div class="divider" data-v-ea10065c="">
             <div class="divider-line" data-v-ea10065c=""></div>
+          </div>
+          <div data-v-d8dd54e8="" data-v-2a5f9854="" class="VPNavScreen VPNavScreenhide" id="VPNavScreen">
+            <div data-v-d8dd54e8="" class="container">
+              <nav data-v-d8dd54e8="" class="VPNavScreenMenu menu"><a data-v-b5bcfc1e=""
+                  class="VPLink link VPNavScreenMenuLink" href="">Guide</a>
+              </nav><!---->
+              <div data-v-b99902d2="" data-v-d8dd54e8="" class="VPNavScreenAppearance appearance">
+                <p data-v-b99902d2="" class="text">Appearance</p><button onclick="switchThemetoggle()"
+                  data-v-77375079="" data-v-de588eec="" data-v-b99902d2="" class="VPSwitch VPSwitchAppearance"
+                  type="button" role="switch" title="Switch to light theme" aria-checked="true"><span data-v-77375079=""
+                    class="check"><span data-v-77375079="" class="icon"><span data-v-de588eec=""
+                        class="vpi-sun sun"></span><span data-v-de588eec=""
+                        class="vpi-moon moon"></span></span></span></button>
+              </div><!---->
+            </div>
           </div>
         </div><!---->
       </header>
@@ -846,6 +861,7 @@
 
   <script type="text/javascript" id="" charset="">console.log("PI:GTM Worked!");</script>
   <script src="doc_files/themeSwither.js"> </script>
+  <script src="doc_files/vpmennu.js"></script>
 </body>
 
 </html>
