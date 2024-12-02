@@ -6158,3 +6158,11 @@ svg[data-v-9279e8cc] {
 #VPNavScreen{
     transition: 1s ease-in;
 }
+
+
+.backdrophide{
+    display: none;
+}
+.backdropshow{
+    display: block;
+}
