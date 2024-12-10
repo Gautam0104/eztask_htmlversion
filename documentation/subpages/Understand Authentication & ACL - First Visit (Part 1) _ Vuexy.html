@@ -35,7 +35,7 @@
     <link rel="modulepreload"
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/index.md.yTezCVUi.lean.js">
     <link rel="icon" href="./FAQ _ Vuexy_files/logo.png">
-    <meta name="theme-color" content="#7367F0">
+    <meta name="theme-color" content="#EB3D63">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="./FAQ _ Vuexy_files/css2">
@@ -319,7 +319,8 @@
                                                 <code>initialAbility</code> by passing <code>userAbilityRules</code> as
                                                 parameter to <code>createMongoAbility</code> function. Here, please note
                                                 that if we don't get <code>userAbilityRules</code> from cookies, we will
-                                                pass an empty array to <code>createMongoAbility</code> function.</p>
+                                                pass an empty array to <code>createMongoAbility</code> function.
+                                            </p>
                                             <h2 id="_4-initialize-casl" tabindex="-1">4. Initialize CASL <a
                                                     class="header-anchor" href="#_4-initialize-casl"
                                                     aria-label="Permalink to &quot;4. Initialize CASL&quot;">​</a></h2>
@@ -345,7 +346,8 @@
                                             </div>
                                             <p>This will initialize <a href="https://casl.js.org/v6/en/package/casl-vue"
                                                     target="_blank" rel="noreferrer"><code>CASL</code></a> with
-                                                <code>initialAbility</code>.</p>
+                                                <code>initialAbility</code>.
+                                            </p>
                                             <h2 id="_5-app-starts-navigation" tabindex="-1">5. App starts navigation <a
                                                     class="header-anchor" href="#_5-app-starts-navigation"
                                                     aria-label="Permalink to &quot;5. App starts navigation&quot;">​</a>
@@ -376,7 +378,8 @@
                                                 the user is allowed to access the page. The <a
                                                     href="https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards"
                                                     target="_blank" rel="noreferrer">beforeEach</a> guard is one of
-                                                these navigation guards.</p>
+                                                these navigation guards.
+                                            </p>
                                             <p>Using this we are checking if the user has the necessary abilities to
                                                 access the requested page. If the user does not have the enough
                                                 abilities, the <code>beforeEach</code> guard will redirect them to an
@@ -416,7 +419,8 @@
                                             <p>To check if the user is logged in, we can check for the presence of
                                                 <code>accessToken</code> and <code>userData</code> in cookie. If either
                                                 of these values is missing, we can conclude that the user is not logged
-                                                in and set <code>isLoggedIn</code> to <code>false</code>.</p>
+                                                in and set <code>isLoggedIn</code> to <code>false</code>.
+                                            </p>
                                             <p>We will later use this variable in our navigation guard.</p>
                                             <h2 id="_9-redirect-if-accessing-page-that-is-forbidden-for-logged-in-users"
                                                 tabindex="-1">9. Redirect if accessing page that is forbidden for logged
@@ -450,7 +454,8 @@
                                                 <code>true</code>, then the user will be allowed to visit the page
                                                 without any redirection occurring. This is common behavior when a user
                                                 is logged in and trying to access pages that they are permitted to
-                                                visit.</p>
+                                                visit.
+                                            </p>
                                             <h2 id="_10-redirect-user-on-appropriate-location" tabindex="-1">10.
                                                 Redirect user on appropriate location <a class="header-anchor"
                                                     href="#_10-redirect-user-on-appropriate-location"

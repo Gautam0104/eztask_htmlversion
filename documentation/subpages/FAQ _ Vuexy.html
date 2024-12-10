@@ -35,7 +35,7 @@
     <link rel="modulepreload"
         href="https://demos.pixinvent.com/vuexy-vuejs-admin-template/documentation/assets/index.md.yTezCVUi.lean.js">
     <link rel="icon" href="./FAQ _ Vuexy_files/logo.png">
-    <meta name="theme-color" content="#7367F0">
+    <meta name="theme-color" content="#EB3D63">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="./FAQ _ Vuexy_files/css2">
@@ -150,11 +150,12 @@
                                             tabindex="0" data-v-96c787e6="" data-v-ae9b85a5=""><!--[--><span
                                                 data-v-ae9b85a5="">Guide</span><!--]--></a><!--]--><!--[--></a><!--]--><!--[--><!--]--><!--[--><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
-                                            
+
                                             <div class="menu" data-v-77cf94f3="">
                                                 <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
                                                     <div class="items" data-v-0b06d54e=""><!--[--><!--[-->
-                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880=""></a>
+                                                        <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880="">
+                                                            </a>
                                                         </div><!--]--><!--[-->
                                                         <div class="VPMenuLink" data-v-0b06d54e="" data-v-d5fb1880=""><a
                                                                 class="VPLink link vp-external-link-icon"
@@ -167,7 +168,7 @@
                                             </div>
                                         </div><!--]--><!--[--><!--]--><!--[-->
                                         <div class="VPFlyout VPNavBarMenuGroup" data-v-96c787e6="" data-v-77cf94f3="">
-                                            
+
                                             <div class="menu" data-v-77cf94f3="">
                                                 <div class="VPMenu" data-v-77cf94f3="" data-v-0b06d54e="">
                                                     <div class="items" data-v-0b06d54e=""><!--[--><!--[-->
@@ -201,7 +202,8 @@
                                                 data-v-77375079=""><span class="icon" data-v-77375079=""><!--[--><span
                                                         class="vpi-sun sun" data-v-de588eec=""></span><span
                                                         class="vpi-moon moon"
-                                                        data-v-de588eec=""></span><!--]--></span></span></button></div>
+                                                        data-v-de588eec=""></span><!--]--></span></span></button>
+                                    </div>
                                     <!---->
                                     <div class="VPFlyout VPNavBarExtra extra" data-v-ea10065c="" data-v-a614bd68=""
                                         data-v-77cf94f3=""><button type="button" class="button" aria-haspopup="true"
@@ -249,7 +251,8 @@
                     <div data-v-fa495079="" data-v-4aa410e9="" class="VPLocalNavOutlineDropdown" style="--vp-vh: 0px;">
                         <button data-v-fa495079="" class=""><span data-v-fa495079="" class="menu-text">On this
                                 page</span><span data-v-fa495079=""
-                                class="vpi-chevron-right icon"></span></button><!----></div>
+                                class="vpi-chevron-right icon"></span></button><!---->
+                    </div>
                 </div>
             </div><!---->
             <div class="VPContent" id="VPContent" data-v-2c31d08e="" data-v-7ce073b2="">
@@ -329,7 +332,8 @@
                                                 <strong>UI framework</strong> also needs <strong>complete
                                                     rewrite</strong> to adopt vue 3. Hence, we also have to rebuild the
                                                 admin template from the scratch. Due to these factors, we got breaking
-                                                changes that are hard to handle 🙁</p>
+                                                changes that are hard to handle 🙁
+                                            </p>
                                             <p>Moreover, vuexy was based on Bootstrap Vue and due to its halted
                                                 development and vue 3 update we have to move to Vuetify which is a
                                                 completely new framework. Hence, It is advisable to gradually move your
@@ -402,7 +406,8 @@
                                                     aria-label="Permalink to &quot;npm install or yarn install warnings or installation warnings&quot;">​</a>
                                             </h2>
                                             <p>You might get some warnings while running <code>npm install</code> or
-                                                <code>yarn install</code> like below:</p>
+                                                <code>yarn install</code> like below:
+                                            </p>
                                             <div class="language-bash vp-adaptive-theme"><button title="Copy Code"
                                                     class="copy"></button><span class="lang">bash</span>
                                                 <pre class="shiki shiki-themes dracula github-light vp-code"
@@ -492,11 +497,13 @@
                                                 the corresponding page's directory. For instance, if you need the
                                                 endpoints for the Invoice app, you can find them in the
                                                 <code>index.ts</code> file located in the <code>apps/invoice</code>
-                                                directory.</p>
+                                                directory.
+                                            </p>
                                             <div class="tip custom-block">
                                                 <p class="custom-block-title">TIP</p>
                                                 <p>You can find authentication related fake responses in
-                                                    <code>src/plugins/fake-api/handlers/auth/index.ts</code> file.</p>
+                                                    <code>src/plugins/fake-api/handlers/auth/index.ts</code> file.
+                                                </p>
                                             </div>
                                             <h2 id="how-to-update-logo-and-text" tabindex="-1">How to update logo and
                                                 text <a class="header-anchor"
@@ -563,7 +570,8 @@
                                                     folders for usage. As you are going to use our vertical nav or
                                                     horizontal nav menu you also have to add navigation items placed in
                                                     <code>src/navigation</code>. The last thing you have to do is update
-                                                    the <code>App.vue</code>.</li>
+                                                    the <code>App.vue</code>.
+                                                </li>
                                                 <li>The next thing is the <code>src/plugins</code> directory. In this,
                                                     you have to grab vuetify plugin as our template is built upon this
                                                     framework. Later, Add other plugins according to your requirement.
