@@ -1,5 +1,5 @@
 .swiper-container.swiper-card-advance-bg {
-    background-color: #F13008;
+    background-color: #EB3D63;
     border-radius: 0.375rem;
     box-shadow: 0 0.1875rem 0.75rem 0 rgba(47, 43, 61, 0.14);
   }
@@ -8,7 +8,7 @@
     white-space: nowrap;
   }
   .swiper-container .swiper-wrapper .swiper-slide .website-analytics-text-bg {
-    background-color: #F13008;
+    background-color: #EB3D63;
     padding: 0.293rem 0.5rem;
     border-radius: 0.375rem;
     min-width: 48px;
