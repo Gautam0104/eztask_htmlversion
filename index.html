@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" dir="ltr"
-  data-theme="theme-default" data-assets-path="assets/" data-template="vertical-menu-template" data-style="light">
+  data-assets-path="assets/" data-template="vertical-menu-template" data-style="light">
 
 <head>
   <meta charset="utf-8" />
@@ -29,8 +29,7 @@
 
   <!-- Core CSS -->
 
-  <link rel="stylesheet" href="assets/vendor/css/rtl/test.css" class="template-customizer-core-css" />
-  <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+
 
   <link rel="stylesheet" href="assets/css/demo.css" />
 
@@ -57,6 +56,7 @@
 
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="assets/js/config.js"></script>
+  <link rel="stylesheet" href="../custom_colorpicker/primary-color.css" id="cLink">
 </head>
 
 <body>
@@ -1298,27 +1298,33 @@
                         <div class="d-flex flex-row align-items-center justify-content-cneter">
                           <div class="position-relative p-2 border rounded-circle active ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#EB3D63" data-color="#675CD8"
-                              style="background-color:#EB3D63; width: 24px; height: 24px;">
+                              data-lowVisibleC="#404071" data-bglow="#8e86e0"
+                              style="background-color:#7367f0; width: 24px; height: 24px;"
+                              onclick="colorPickerPrimary()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle  ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#0D9394" data-color="#0B8485"
-                              style="background-color:#0D9394; width: 24px; height: 24px;">
+                              data-lowVisibleC="#274a5b" data-bglow="#8e86e0"
+                              style="background-color:#0D9394; width: 24px; height: 24px;" onclick="colorPicker()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle  ms-2">
                             <div class="rounded-circle color-box " data-bgcolor="#FFAB1D" data-color="#e5991a"
-                              style="background-color:#FFAB1D; width: 24px; height: 24px;">
+                              data-lowVisibleC="#61503f" style="background-color:#FFAB1D; width: 24px; height: 24px;"
+                              onclick="colorPickerWarning()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle  ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#EB3D63" data-color="#D33659"
-                              style="background-color:#EB3D63; width: 24px; height: 24px;">
+                              data-lowVisibleC="#61503f" style="background-color:#EB3D63; width: 24px; height: 24px;"
+                              onclick="colorPickerDanger()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle me-2 ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#2092EC" data-color="#1C83D4"
-                              style="background-color:#2092EC; width: 24px; height: 24px;">
+                              data-lowVisibleC="#2c4a70" style="background-color:#2092EC; width: 24px; height: 24px;"
+                              onclick="colorPickerSecondary()">
                             </div>
                           </div>
                           <div
@@ -2915,13 +2921,14 @@
   <script src="assets/js/main.js"></script>
 
   <!-- Page JS -->
+  <script src="../custom_colorpicker/custom_colorpicker.js"></script>
   <script src="assets/js/dashboards-analytics.js"></script>
 
   <!-- Theme Color JS -->
-  <script src="assets/colorPicker.js"></script>
+  <!-- <script src="assets/colorPicker.js"></script> -->
 
 
-
+  <script src="../custom_colorpicker/custom_colorpicker.js"></script>
 </body>
 
 </html>

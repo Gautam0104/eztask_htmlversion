@@ -13,7 +13,7 @@ const CONTROLS = [
   'layoutFooterFixed',
   'themes'
 ]
-const STYLES = ['light', 'dark', 'system']
+const STYLES = ['light', 'dark', 'system', 'dark']
 const NAVBAR_OPTIONS = ['sticky', 'static', 'hidden']
 let layoutNavbarVar
 const cl = document.documentElement.classList
@@ -1134,7 +1134,12 @@ TemplateCustomizer.THEMES = [
   },
   {
     name: 'theme-semi-dark',
-    title: 'Semi Dark'
+    title: ' Dark'
+  }
+  ,
+  {
+    name: 'theme-semi-dark',
+    title: ' Dark'
   }
 ]
 

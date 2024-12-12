@@ -59,4 +59,5 @@
   ],
   // Extension: npm
   "npm.packageManager": "yarn",
+  "liveServer.settings.port": 5501,
 }
