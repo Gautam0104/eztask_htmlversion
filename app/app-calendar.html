@@ -29,13 +29,13 @@
 
   <!-- Core CSS -->
 
-  <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
-  <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+  <!-- <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" /> -->
 
   <link rel="stylesheet" href="../assets/css/demo.css" />
 
   <!-- Vendors CSS -->
-  <link rel="stylesheet" href="../assets/vendor/libs/node-waves/node-waves.css" />
+  <!-- <link rel="stylesheet" href="../assets/vendor/libs/node-waves/node-waves.css" /> -->
 
   <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
   <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
@@ -58,6 +58,7 @@
 
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="../assets/js/config.js"></script>
+  <link rel="stylesheet" href="../custom_colorpicker/primary-color.css" id="cLink">
 </head>
 
 <body>
@@ -1300,28 +1301,32 @@
                           <div class="position-relative p-2 border rounded-circle active ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#EB3D63" data-color="#675CD8"
                               data-lowVisibleC="#404071" data-bglow="#8e86e0"
-                              style="background-color:#EB3D63; width: 24px; height: 24px;">
+                              style="background-color:#7367f0; width: 24px; height: 24px;"
+                              onclick="colorPickerPrimary()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle  ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#0D9394" data-color="#0B8485"
                               data-lowVisibleC="#274a5b" data-bglow="#8e86e0"
-                              style="background-color:#0D9394; width: 24px; height: 24px;">
+                              style="background-color:#0D9394; width: 24px; height: 24px;" onclick="colorPicker()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle  ms-2">
                             <div class="rounded-circle color-box " data-bgcolor="#FFAB1D" data-color="#e5991a"
-                              data-lowVisibleC="#61503f" style="background-color:#FFAB1D; width: 24px; height: 24px;">
+                              data-lowVisibleC="#61503f" style="background-color:#FFAB1D; width: 24px; height: 24px;"
+                              onclick="colorPickerWarning()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle  ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#EB3D63" data-color="#D33659"
-                              data-lowVisibleC="#61503f" style="background-color:#EB3D63; width: 24px; height: 24px;">
+                              data-lowVisibleC="#61503f" style="background-color:#EB3D63; width: 24px; height: 24px;"
+                              onclick="colorPickerDanger()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle me-2 ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#2092EC" data-color="#1C83D4"
-                              data-lowVisibleC="#2c4a70" style="background-color:#2092EC; width: 24px; height: 24px;">
+                              data-lowVisibleC="#2c4a70" style="background-color:#2092EC; width: 24px; height: 24px;"
+                              onclick="colorPickerSecondary()">
                             </div>
                           </div>
                           <div
@@ -1740,6 +1745,20 @@
           <div class="container-xxl flex-grow-1 container-p-y">
             <div class="card app-calendar-wrapper">
               <div class="row g-0">
+
+                <button class="btn btn-primary" onclick=" SaveDataToLocalStorage('data')">Store</button>
+                <script>
+                  var a = [];
+                  function SaveDataToLocalStorage(data) {
+                    var receiveddata = JSON.stringify(data);
+                    a.push(receiveddata);
+                    alert(a);
+
+                    localStorage.setItem('session', a);
+
+                  }
+                </script>
+
                 <!-- Calendar Sidebar -->
                 <div class="col app-calendar-sidebar border-end" id="app-calendar-sidebar">
                   <div class="border-bottom p-6 my-sm-0 mb-4">
@@ -1971,7 +1990,7 @@
   <!-- Page JS -->
   <script src="../assets/js/app-calendar-events.js"></script>
   <script src="../assets/js/app-calendar.js"></script>
-  <script>
+  <!-- <script>
     const colorBoxes = document.querySelectorAll('.color-box');
     const activeMenu = document.querySelector('.menu-link-active');
     const footerLink = document.querySelectorAll('.footer-link');
@@ -2023,7 +2042,9 @@
         Item.classList
       })
     });
-  </script>
+  </script> -->
+
+  <script src="../custom_colorpicker/custom_colorpicker.js"></script>
 </body>
 
 </html>
