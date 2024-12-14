@@ -1,42 +1,69 @@
+const themeMode = localStorage.getItem('templateCustomizer-vertical-menu-template--Style')
 
 function colorPicker() {
+    localStorage.setItem('colorMode', 'success')
+    if (themeMode === 'dark') {
+        localStorage.setItem('href', '../custom_colorpicker/success-color-dark.css')
+        location.reload();
+    } else {
+        localStorage.setItem('href', '../custom_colorpicker/success-color.css')
+        location.reload();
+    }
 
-    // Store data
-    localStorage.setItem('href', '../custom_colorpicker/success-color.css');
-    window.location.reload();
+
 
 
 
 }
 function colorPickerPrimary() {
 
-    // Store data
-    localStorage.setItem('href', '../custom_colorpicker/primary-color.css');
+    localStorage.setItem('colorMode', 'primary')
+    if (themeMode === 'dark') {
+        localStorage.setItem('href', '../custom_colorpicker/primary-color-dark.css')
+        location.reload();
+    } else {
+        localStorage.setItem('href', '../custom_colorpicker/primary-color.css')
+        location.reload();
+    }
 
-    window.location.reload();
 
 
 
 }
 function colorPickerWarning() {
-    // Store data
-    localStorage.setItem('href', '../custom_colorpicker/warning-color.css');
+    localStorage.setItem('colorMode', 'warning')
+    if (themeMode === 'dark') {
+        localStorage.setItem('href', '../custom_colorpicker/warning-color-dark.css')
+        location.reload();
+    } else {
+        localStorage.setItem('href', '../custom_colorpicker/warning-color.css')
+        location.reload();
+    }
 
-    window.location.reload();
 
 }
 function colorPickerSecondary() {
-    // Store data
-    localStorage.setItem('href', '../custom_colorpicker/secondary-color.css');
+    localStorage.setItem('colorMode', 'secondary')
+    if (themeMode === 'dark') {
+        localStorage.setItem('href', '../custom_colorpicker/secondary-color-dark.css')
+        location.reload();
+    } else {
+        localStorage.setItem('href', '../custom_colorpicker/secondary-color.css')
+        location.reload();
+    }
 
-    window.location.reload();
 
 }
 function colorPickerDanger() {
-    // Store data
-    localStorage.setItem('href', '../custom_colorpicker/danger-color.css');
+    localStorage.setItem('colorMode', 'danger')
+    if (themeMode === 'dark') {
+        localStorage.setItem('href', '../custom_colorpicker/danger-color-dark.css')
+        location.reload();
+    } else {
+        localStorage.setItem('href', '../custom_colorpicker/danger-color.css')
+        location.reload();
+    }
 
-    window.location.reload();
 
 }
 // Retrieve and display data
