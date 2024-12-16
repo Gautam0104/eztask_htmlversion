@@ -1508,7 +1508,7 @@ li.ui-timepicker-selected,
   color: #cfcde4;
 }
 .bg-menu-theme.menu-vertical .menu-item.active > .menu-link:not(.menu-toggle) {
-  background: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #0d9394 100%);
+  background: linear-gradient(270deg, rgb(21,125,130) 0%, #0d9394 100%);
   box-shadow: 0px 2px 6px 0px rgba(115, 103, 240, 0.3);
   color: #fff !important;
 }
@@ -1516,10 +1516,10 @@ li.ui-timepicker-selected,
   color: #fff !important;
 }
 [dir=rtl] .bg-menu-theme.menu-vertical .menu-item.active > .menu-link:not(.menu-toggle) {
-  background: linear-gradient(-270deg, rgba(115, 103, 240, 0.7) 0%, #0d9394 100%) !important;
+  background: linear-gradient(-270deg, rgb(21,125,130) 0%, #0d9394 100%) !important;
 }
 .bg-menu-theme.menu-horizontal .menu-inner > .menu-item.active > .menu-link.menu-toggle {
-  background: linear-gradient(270deg, rgba(115, 103, 240, 0.7) 0%, #0d9394 100%);
+  background: linear-gradient(270deg, rgb(21,125,130) 0%, #0d9394 100%);
   color: #fff !important;
   box-shadow: 0px 2px 6px 0px rgba(115, 103, 240, 0.3);
 }
@@ -1527,7 +1527,7 @@ li.ui-timepicker-selected,
   color: #fff !important;
 }
 [dir=rtl] .bg-menu-theme.menu-horizontal .menu-inner > .menu-item.active > .menu-link.menu-toggle {
-  background: linear-gradient(-270deg, rgba(115, 103, 240, 0.7) 0%, #0d9394 100%);
+  background: linear-gradient(-270deg, rgb(21,125,130) 0%, #0d9394 100%);
   box-shadow: 0px 2px 6px 0px rgba(115, 103, 240, 0.3);
   color: #fff !important;
 }

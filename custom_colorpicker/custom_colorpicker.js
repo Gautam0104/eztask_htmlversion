@@ -1,73 +1,65 @@
+
 const themeMode = localStorage.getItem('templateCustomizer-vertical-menu-template--Style')
 
 function colorPicker() {
-    localStorage.setItem('colorMode', 'success')
-    if (themeMode === 'dark') {
-        localStorage.setItem('href', '../custom_colorpicker/success-color-dark.css')
-        location.reload();
-    } else {
-        localStorage.setItem('href', '../custom_colorpicker/success-color.css')
-        location.reload();
-    }
-
-
-
-
-
+    localStorage.setItem('colorMode', 'success');
+    localStorage.setItem('colorCode', '#0d9394');
+    location.reload();
 }
 function colorPickerPrimary() {
 
-    localStorage.setItem('colorMode', 'primary')
-    if (themeMode === 'dark') {
-        localStorage.setItem('href', '../custom_colorpicker/primary-color-dark.css')
-        location.reload();
-    } else {
-        localStorage.setItem('href', '../custom_colorpicker/primary-color.css')
-        location.reload();
-    }
+    localStorage.setItem('colorMode', 'primary');
+    localStorage.setItem('colorCode', '#7367f0');
 
-
+    location.reload();
 
 
 }
 function colorPickerWarning() {
-    localStorage.setItem('colorMode', 'warning')
-    if (themeMode === 'dark') {
-        localStorage.setItem('href', '../custom_colorpicker/warning-color-dark.css')
-        location.reload();
-    } else {
-        localStorage.setItem('href', '../custom_colorpicker/warning-color.css')
-        location.reload();
-    }
+    localStorage.setItem('colorMode', 'warning');
+    localStorage.setItem('colorCode', '#ffab1d');
+    location.reload();
 
 
 }
 function colorPickerSecondary() {
-    localStorage.setItem('colorMode', 'secondary')
-    if (themeMode === 'dark') {
-        localStorage.setItem('href', '../custom_colorpicker/secondary-color-dark.css')
-        location.reload();
-    } else {
-        localStorage.setItem('href', '../custom_colorpicker/secondary-color.css')
-        location.reload();
-    }
+    localStorage.setItem('colorMode', 'secondary');
+    localStorage.setItem('colorCode', '#2092ec');
+    location.reload();
 
 
 }
 function colorPickerDanger() {
-    localStorage.setItem('colorMode', 'danger')
-    if (themeMode === 'dark') {
-        localStorage.setItem('href', '../custom_colorpicker/danger-color-dark.css')
-        location.reload();
-    } else {
-        localStorage.setItem('href', '../custom_colorpicker/danger-color.css')
-        location.reload();
-    }
+    localStorage.setItem('colorMode', 'danger');
+    localStorage.setItem('colorCode', '#eb3d63');
+    location.reload();
 
 
 }
 // Retrieve and display data
-const storedUsername = localStorage.getItem('href');
-console.log(`href: ${storedUsername}`);
-const colorLink = document.getElementById('cLink').href = storedUsername;
-console.log(colorLink);
+// const storedUsername = localStorage.getItem('href');
+// console.log(`href: ${storedUsername}`);
+// const colorLink = document.getElementById('cLink').href = storedUsername;
+// const cardLink = document.getElementById('cLink').href = storedUsername;
+// console.log(colorLink);
+
+// Step 1: Create and set a new <link> element
+const newcolorLink = document.createElement('link');
+const cardColor = localStorage.getItem('colorMode');
+if (themeMode === 'light') {
+    newcolorLink.rel = 'stylesheet'; // Specify the relationship, e.g., stylesheet
+    newcolorLink.href = `../custom_colorpicker/${cardColor}-color.css`;
+} else {
+    newcolorLink.rel = 'stylesheet'; // Specify the relationship, e.g., stylesheet
+    newcolorLink.href = `../custom_colorpicker/${cardColor}-color-dark.css`;
+}
+document.head.appendChild(newcolorLink);
+console.log(document.head);
+
+// Step 2: Create and set a new <link> element
+const newLink = document.createElement('link');
+// const cardColor = localStorage.getItem('colorMode');
+newLink.rel = 'stylesheet'; // Specify the relationship, e.g., stylesheet
+newLink.href = `../custom_colorpicker/card-${cardColor}.css`;
+document.head.appendChild(newLink);
+console.log(document.head);

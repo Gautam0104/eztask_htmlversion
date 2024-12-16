@@ -31,7 +31,7 @@
 
 
 
-  <link rel="stylesheet" href="assets/css/demo.css" />
+
 
   <!-- Vendors CSS -->
   <!-- <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" /> -->
@@ -45,7 +45,7 @@
   <link rel="stylesheet" href="assets/vendor/libs/dataapp/tables-checkboxes-jquery/datatables.checkboxes.css" />
 
   <!-- Page CSS -->
-  <link rel="stylesheet" href="card.css" />
+
 
   <!-- Helpers -->
   <script src="assets/vendor/js/helpers.js"></script>
@@ -56,7 +56,8 @@
 
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="assets/js/config.js"></script>
-  <link rel="stylesheet" href="" id="cLink">
+
+
 </head>
 
 <body>
@@ -2926,7 +2927,14 @@
 
   <!-- Theme Color JS -->
   <!-- <script src="assets/colorPicker.js"></script> -->
-
+  <script>
+    if (localStorage.length > 0) {
+      console.log('localStorage has data.');
+    } else {
+      localStorage.setItem("colorMode", "primary");
+      localStorage.setItem("templateCustomizer-vertical-menu-template--Style", "light");
+    }
+  </script>
 
   <script src="custom_colorpicker/custom_colorpicker.js"></script>
 </body>

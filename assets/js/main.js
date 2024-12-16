@@ -141,35 +141,38 @@ if (document.getElementById('layout-menu')) {
         const mode = localStorage.getItem("colorMode")
         if (currentStyle === 'light') {
           window.templateCustomizer.setStyle('light');
-          if (mode === "primary") {
-            localStorage.setItem('href', '../custom_colorpicker/primary-color.css')
-          } else if (mode === "success") {
-            localStorage.setItem('href', '../custom_colorpicker/success-color.css')
-          }
-          else if (mode === "danger") {
-            localStorage.setItem('href', '../custom_colorpicker/danger-color.css')
-          }
-        } else if (mode === "warning") {
-          localStorage.setItem('href', '../custom_colorpicker/warning-color.css')
-        }
-        else if (mode === "secondary") {
-          localStorage.setItem('href', '../custom_colorpicker/secondary-color.css')
+          // if (mode === "primary") {
+          //   localStorage.setItem('href', '../custom_colorpicker/primary-color.css')
+          // } else if (mode === "success") {
+          //   localStorage.setItem('href', '../custom_colorpicker/success-color.css')
+          // }
+          // else if (mode === "danger") {
+          //   localStorage.setItem('href', '../custom_colorpicker/danger-color.css')
+          // }
+          // else if (mode === "warning") {
+          //   localStorage.setItem('href', '../custom_colorpicker/warning-color.css')
+          // }
+          // else if (mode === "secondary") {
+          //   localStorage.setItem('href', '../custom_colorpicker/secondary-color.css')
+          // }
+
 
         } else if (currentStyle === 'dark') {
           window.templateCustomizer.setStyle('dark');
-          if (mode === "primary") {
-            localStorage.setItem('href', '../custom_colorpicker/primary-color-dark.css')
-          } else if (mode === "success") {
-            localStorage.setItem('href', '../custom_colorpicker/success-color-dark.css')
-          }
-          else if (mode === "danger") {
-            localStorage.setItem('href', '../custom_colorpicker/danger-color-dark.css')
-          }
-        } else if (mode === "warning") {
-          localStorage.setItem('href', '../custom_colorpicker/warning-color-dark.css')
-        }
-        else if (mode === "secondary") {
-          localStorage.setItem('href', '../custom_colorpicker/secondary-color-dark.css')
+          // if (mode === "primary") {
+          //   localStorage.setItem('href', '../custom_colorpicker/primary-color-dark.css')
+          // } else if (mode === "success") {
+          //   localStorage.setItem('href', '../custom_colorpicker/success-color-dark.css')
+          // }
+          // else if (mode === "danger") {
+          //   localStorage.setItem('href', '../custom_colorpicker/danger-color-dark.css')
+          // }
+          // else if (mode === "warning") {
+          //   localStorage.setItem('href', '../custom_colorpicker/warning-color-dark.css')
+          // }
+          // else if (mode === "secondary") {
+          //   localStorage.setItem('href', '../custom_colorpicker/secondary-color-dark.css')
+          // }
 
         } else {
           window.templateCustomizer.setStyle('system');

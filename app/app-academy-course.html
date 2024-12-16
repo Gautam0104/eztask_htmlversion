@@ -29,7 +29,7 @@
 
   <!-- Core CSS -->
 
-  <link rel="stylesheet" href="../custom_colorpicker/primary-color.css" id="cLink">
+
 
   <link rel="stylesheet" href="../assets/css/demo.css" />
 
@@ -54,6 +54,7 @@
 
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="../assets/js/config.js"></script>
+  <link rel="stylesheet" href="" id="cLink">
 </head>
 
 <body>
@@ -1295,27 +1296,33 @@
                         <div class="d-flex flex-row align-items-center justify-content-cneter">
                           <div class="position-relative p-2 border rounded-circle active ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#EB3D63" data-color="#675CD8"
-                              data-bglow="#8e86e0" style="background-color:#EB3D63; width: 24px; height: 24px;">
+                              data-lowVisibleC="#404071" data-bglow="#8e86e0"
+                              style="background-color:#7367f0; width: 24px; height: 24px;"
+                              onclick="colorPickerPrimary()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle  ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#0D9394" data-color="#0B8485"
-                              data-bglow="#8e86e0" style="background-color:#0D9394; width: 24px; height: 24px;">
+                              data-lowVisibleC="#274a5b" data-bglow="#8e86e0"
+                              style="background-color:#0D9394; width: 24px; height: 24px;" onclick="colorPicker()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle  ms-2">
                             <div class="rounded-circle color-box " data-bgcolor="#FFAB1D" data-color="#e5991a"
-                              style="background-color:#FFAB1D; width: 24px; height: 24px;">
+                              data-lowVisibleC="#61503f" style="background-color:#FFAB1D; width: 24px; height: 24px;"
+                              onclick="colorPickerWarning()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle  ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#EB3D63" data-color="#D33659"
-                              style="background-color:#EB3D63; width: 24px; height: 24px;">
+                              data-lowVisibleC="#61503f" style="background-color:#EB3D63; width: 24px; height: 24px;"
+                              onclick="colorPickerDanger()">
                             </div>
                           </div>
                           <div class="position-relative p-2 border rounded-circle me-2 ms-2">
                             <div class="rounded-circle color-box" data-bgcolor="#2092EC" data-color="#1C83D4"
-                              style="background-color:#2092EC; width: 24px; height: 24px;">
+                              data-lowVisibleC="#2c4a70" style="background-color:#2092EC; width: 24px; height: 24px;"
+                              onclick="colorPickerSecondary()">
                             </div>
                           </div>
                           <div
@@ -2213,55 +2220,7 @@
   <!-- Page JS -->
   <script src="../custom_colorpicker/custom_colorpicker.js"></script>
   <script src="../assets/js/app-academy-course.js"></script>
-  <script>
-    const colorBoxes = document.querySelectorAll('.color-box');
-    const activeMenu = document.querySelector('.menu-link-active');
-    const footerLink = document.querySelectorAll('.footer-link');
-    const othertext = document.querySelectorAll('.otext');
-    const acBtn = document.querySelector('.acbuttton');
-    const btnC = document.querySelectorAll('.btnCSwitch');
-    const cardBg = document.querySelectorAll('.card-bg');
-    const progressBar = document.querySelectorAll('.progress-bar');
-    const pageItem = document.querySelectorAll('.page-item');
-
-    // Add click event to each color box
-    colorBoxes.forEach(box => {
-      box.addEventListener('click', () => {
-        const bgcolor = box.dataset.bgcolor; // Get the color from data attribute
-        const color = box.dataset.color; // Get the color from data attribute
-        acBtn.classList.remove('active');
-        activeMenu.style.backgroundColor = bgcolor;
-        activeMenu.style.color = '#fff'
-
-        footerLink.forEach(footerItem => {
-          footerItem.style.color = bgcolor;
-        })
-        othertext.forEach(Item => {
-          Item.classList.remove('text-primary')
-          Item.classList.remove('text-danger')
-          Item.style.color = bgcolor;
-        })
-        btnC.forEach(Item => {
-          Item.classList.remove('btn-primary')
-          Item.style.color = '#fff';
-          Item.style.backgroundColor = bgcolor;
-        })
-        progressBar.forEach(Item => {
-          Item.style.backgroundColor = bgcolor;
-        })
-        pageItem.forEach(Item => {
-          if (Item.classList = "active") {
-            Item.classList.remove('active')
-            Item.style.margin = '4px';
-            Item.style.backgroundColor = '#efeef0';
-          }
-
-        })
-
-      });
-
-    });
-  </script>
+  <script src="../custom_colorpicker/custom_colorpicker.js"></script>
 </body>
 
 </html>

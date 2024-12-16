@@ -6,11 +6,20 @@
  */
 
 'use strict';
+const primary = '#7367f0';
+const secondary = '#2092ec';
+const success = '#0d9394';
+const warning = '#ffab1d';
+const danger = '#eb3d63';
+
+const colorCode = localStorage.getItem('colorCode');
+console.log(colorCode);
+
 
 // JS global variables
 window.config = {
   colors: {
-    primary: '#EB3D63',
+    primary: colorCode,
     secondary: '#808390',
     success: '#28c76f',
     info: '#00bad1',
@@ -27,7 +36,7 @@ window.config = {
     borderColor: '#e6e6e8'
   },
   colors_label: {
-    primary: '#EB3D6329',
+    primary: colorCode,
     secondary: '#a8aaae29',
     success: '#28c76f29',
     info: '#00cfe829',
