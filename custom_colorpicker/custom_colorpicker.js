@@ -1,6 +1,13 @@
 
 const themeMode = localStorage.getItem('templateCustomizer-vertical-menu-template--Style')
-
+if (localStorage.length > 0) {
+    console.log('localStorage has data.');
+} else {
+    console.log('localStorage has not any data.');
+    localStorage.setItem("colorMode", "primary");
+    localStorage.setItem('colorCode', '#7367f0');
+    localStorage.setItem("templateCustomizer-vertical-menu-template--Style", "light");
+}
 function colorPicker() {
     localStorage.setItem('colorMode', 'success');
     localStorage.setItem('colorCode', '#0d9394');
