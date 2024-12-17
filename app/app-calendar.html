@@ -1746,18 +1746,7 @@
             <div class="card app-calendar-wrapper">
               <div class="row g-0">
 
-                <button class="btn btn-primary" onclick=" SaveDataToLocalStorage('data')">Store</button>
-                <script>
-                  var a = [];
-                  function SaveDataToLocalStorage(data) {
-                    var receiveddata = JSON.stringify(data);
-                    a.push(receiveddata);
-                    alert(a);
 
-                    localStorage.setItem('session', a);
-
-                  }
-                </script>
 
                 <!-- Calendar Sidebar -->
                 <div class="col app-calendar-sidebar border-end" id="app-calendar-sidebar">
