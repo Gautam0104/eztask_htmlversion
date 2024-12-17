@@ -6,11 +6,7 @@
  */
 
 'use strict';
-const primary = '#7367f0';
-const secondary = '#2092ec';
-const success = '#0d9394';
-const warning = '#ffab1d';
-const danger = '#eb3d63';
+
 
 const colorCode = localStorage.getItem('colorCode');
 console.log(colorCode);
