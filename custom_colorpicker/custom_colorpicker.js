@@ -1,9 +1,7 @@
 
 const themeMode = localStorage.getItem('templateCustomizer-vertical-menu-template--Style')
 if (localStorage.length > 0) {
-    console.log('localStorage has data.');
 } else {
-    console.log('localStorage has not any data.');
     localStorage.setItem("colorMode", "primary");
     localStorage.setItem('colorCode', '#7367f0');
     localStorage.setItem("templateCustomizer-vertical-menu-template--Style", "light");
@@ -61,7 +59,7 @@ if (themeMode === 'light') {
     newcolorLink.href = `../custom_colorpicker/${cardColor}-color-dark.css`;
 }
 document.head.appendChild(newcolorLink);
-console.log(document.head);
+
 
 // Step 2: Create and set a new <link> element
 const newLink = document.createElement('link');
@@ -69,4 +67,3 @@ const newLink = document.createElement('link');
 newLink.rel = 'stylesheet'; // Specify the relationship, e.g., stylesheet
 newLink.href = `../custom_colorpicker/card-${cardColor}.css`;
 document.head.appendChild(newLink);
-console.log(document.head);

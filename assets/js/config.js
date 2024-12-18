@@ -5,11 +5,10 @@
  * ! To clear local storage: (https://www.leadshook.com/help/how-to-clear-local-storage-in-google-chrome-browser/).
  */
 
-'use strict';
-
+// 'use strict';
 
 const colorCode = localStorage.getItem('colorCode');
-console.log(colorCode);
+
 
 
 // JS global variables

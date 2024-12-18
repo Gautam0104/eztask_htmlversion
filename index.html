@@ -29,12 +29,8 @@
 
   <!-- Core CSS -->
 
-
-
-
-
   <!-- Vendors CSS -->
-  <!-- <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" /> -->
+  <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
 
   <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
   <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
@@ -2899,39 +2895,13 @@
   <!-- / Layout wrapper -->
 
   <!-- Core JS -->
-  <!-- build:js assets/vendor/js/core.js -->
-
-  <script src="assets/vendor/libs/jquery/jquery.js"></script>
-  <script src="assets/vendor/libs/popper/popper.js"></script>
-  <script src="assets/vendor/js/bootstrap.js"></script>
-  <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
-  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-  <script src="assets/vendor/libs/hammer/hammer.js"></script>
-  <script src="assets/vendor/libs/i18n/i18n.js"></script>
-  <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
-  <script src="assets/vendor/js/menu.js"></script>
-
-  <!-- endbuild -->
-
-  <!-- Vendors JS -->
-  <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
-  <script src="assets/vendor/libs/swiper/swiper.js"></script>
-  <script src="assets/vendor/libs/dataapp/tables-bs5/dataapp/tables-bootstrap5.js"></script>
-
-  <!-- Main JS -->
-  <script src="assets/js/main.js"></script>
-
-  <!-- Page JS -->
-
-  <script src="assets/js/dashboards-analytics.js"></script>
 
   <!-- Theme Color JS -->
-  <!-- <script src="assets/colorPicker.js"></script> -->
   <script>
     if (localStorage.length > 0) {
-      console.log('localStorage has data.');
+
     } else {
-      console.log('localStorage has not any data.');
+
       localStorage.setItem("colorMode", "primary");
       localStorage.setItem('colorCode', '#7367f0');
       localStorage.setItem("templateCustomizer-vertical-menu-template--Style", "light");
@@ -2986,7 +2956,7 @@
       newcolorLink.href = `custom_colorpicker/${cardColor}-color-dark.css`;
     }
     document.head.appendChild(newcolorLink);
-    console.log(document.head);
+
 
     // Step 2: Create and set a new <link> element
     const newLink = document.createElement('link');
@@ -2994,11 +2964,35 @@
     newLink.rel = 'stylesheet'; // Specify the relationship, e.g., stylesheet
     newLink.href = `custom_colorpicker/card-${cardColor}.css`;
     document.head.appendChild(newLink);
-    console.log(document.head);
-  </script>
 
+  </script>
+  <!-- build:js assets/vendor/js/core.js -->
+
+  <script src="assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="assets/vendor/libs/popper/popper.js"></script>
+  <script src="assets/vendor/js/bootstrap.js"></script>
+  <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="assets/vendor/libs/hammer/hammer.js"></script>
+  <script src="assets/vendor/libs/i18n/i18n.js"></script>
+  <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+  <script src="assets/vendor/js/menu.js"></script>
+
+  <!-- endbuild -->
+
+  <!-- Vendors JS -->
+  <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+  <script src="assets/vendor/libs/swiper/swiper.js"></script>
+  <script src="assets/vendor/libs/dataapp/tables-bs5/dataapp/tables-bootstrap5.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Page JS -->
+
+  <script src="assets/js/dashboards-analytics.js"></script>
 
 </body>
-<!-- testing -->
+
 
 </html>
