@@ -9950,6 +9950,7 @@ div:not(.nav-align-left):not(.nav-align-right) > .nav-tabs {
 
 .page-link.btn-primary {
   box-shadow: none !important;
+  
 }
 
 .pagination.pagination-square .page-item a {
